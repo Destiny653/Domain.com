@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
-ol, ul {
+ol, ul, li{
   list-style: none;
 }
 blockquote, q {
@@ -53,14 +53,122 @@ Grid
 =============================================
 */
 
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+img {
+  height: 40px;
+  width: auto;
+}
+.part {
+  height: 25px;
+  width: 150px;
+  margin-bottom: -7px;
+}
+.top a {
+  padding: 0 10px;
+}
+.container li,
+.blend {
+  display: inline-block;
+  font: 14px Lato, sans-serif;
+  font-weight: 600;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 6px;
+}
+.part {
+  margin-left: 79px;
+  margin-right: 40px;
+}
+ .blend {
+  margin-left: 79px;
+}
+.blend li {
+  padding: 0 20px;
+}
+form {
+  width: 87%;
+  margin: auto;
+  height: 50px;
+  background: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+form input {
+  flex: 1;
+  width: 70%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: #fff;
+  border-radius: 5px;
+}
+.container a {
+  text-decoration: none;
+  color: rgb(53, 48, 48);
+}
+.sub-chain h3, 
+.sub-chain p,
+.sub-chain a {
+  margin: 0 0 15px 89px;
+  color: #fff;
+  font: 14px Lato, Helvetica, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+.sub-chain p {
+  font: 48px Lato, Helvetica, sans-serif;
+}
+.chain {
+  padding: 100px 0 150px 0;
+  background: lightblue;
+}
+
 /*
 =============================================
 Typography 
 ============================================= 
 */
 
+.top a,
+.container li {
+  color: #fff;
+  text-decoration: none;
+}
+::placeholder {
+  color: grey;
+  padding: 0 15px 0 55px;
+}
+.top {
+  display: flex;
+  border-left: 2px solid rgba(128, 128, 128, 0.63);
+  margin-left: 89px;
+  line-height: 40px;
+  height: 40px;
+}
+.stress {
+  background: #000;
+}
+
 /*
 =============================================
 Button 
 =============================================
 */
+
+button {
+  height: 100%;
+  padding: 0 35px;
+  margin-left: 13px;
+  color: #fff;
+  background: red;
+  border: none;
+  border-radius: 5px;
+}
