@@ -78,9 +78,7 @@ img {
   display: inline-block;
   font: 14px Lato, sans-serif;
   font-weight: 600;
-  height: 80px;
-  line-height: 80px;
-  padding: 0 6px;
+  padding: 35px 6px;
 }
 .part {
   margin-left: 79px;
@@ -142,7 +140,7 @@ Typography
   color: #fff;
   text-decoration: none;
 }
-::placeholder {
+.chain ::placeholder {
   color: grey;
   padding: 0 15px 0 55px;
 }
@@ -158,6 +156,66 @@ Typography
 }
 
 /*
+============================================
+Hover list 
+============================================ 
+ */
+
+ .subdom {
+  display: none;
+ }
+.domain:hover .subdom {
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+.subdom li {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 10px;
+  text-transform: capitalize;
+}
+.subdom input {
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.534);
+}
+.subdom ::placeholder {
+  padding: 20px;
+}
+.subdom input {
+  padding: 10px 0;
+}
+.blink-hov {
+  display: none;
+}
+.blink:hover .blink-hov {
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+.blink-hov li {
+  display: block;
+  color: #000;
+  padding: 0;
+}
+.blink-hov p {
+  margin-bottom: 20px 0;
+  color: grey;
+}
+.blink-hov ul {
+  width: 250px;
+}
+.blink-hov p {
+  font-weight: 100;
+  margin-left: 20px;
+  font-size: small;
+}
+.blink-hov .point {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/*
 =============================================
 Button 
 =============================================
@@ -168,7 +226,24 @@ button {
   padding: 0 35px;
   margin-left: 13px;
   color: #fff;
-  background: red;
+  background: rgb(228, 21, 21);
   border: none;
   border-radius: 5px;
+}
+.blink-hov button  {
+  margin: 20px 0 20px 21px;
+  background: rgb(17, 113, 145);
+  color: #000;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 210px;
+}
+.blink-hov .btn {
+  margin: 20px 21px;
+  color: rgb(228, 21, 21);
+  border: 2px solid rgb(228, 21, 21);
+  width: 210px;
+  background: #fff;
+  text-transform: uppercase;
+  padding: 10px;
 }
