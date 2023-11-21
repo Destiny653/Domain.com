@@ -297,3 +297,85 @@ button:hover {
   color: #fff;
   background: red;
 }
+/* 
+===========================================
+Footer
+===========================================
+ */
+
+ .main-header li {
+  display: inline-block;
+  margin: 30px 20px 40px 0;
+  text-transform: capitalize;
+  font: 14px Lato, sans-serif;
+  font-weight: 600;
+  color: deepskyblue;
+ }
+ .main-header li:first-child {
+  margin: 0 80px;
+  color: #000;
+ }
+ .col-2-3 {
+  padding-left: 36%;
+  background: rgb(216, 211, 211);
+ }
+ .head-intro p{
+  display: inline-block;
+  margin-right: 10px;
+  width: 300px;
+  font: 26px Lato, Helvetica, sans-serif;
+ }
+ .head-intro {
+  padding-top: 50px;
+  margin-bottom: 50px;
+ }
+.head-intro input {
+  width: 376px;
+  padding: 12px 35px 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 1px solidd #ddd;
+  vertical-align: top;
+ }
+ .path {
+  display: inline-block;
+  vertical-align: top;
+  color: rgb(122, 122, 122);
+  margin: 10px;
+ }
+ .path-last {
+  padding-top: 15px;
+ }
+ .mentor li {
+  margin: 20px 0;
+ }
+ .path {
+  font: 14px Lato, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 150px;
+ }
+ .mentor li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font: 14px Lato, sans-serif;
+  font-weight: 600;
+  color: #fff;
+ }
+ .bottom-col li {
+  display: inline-block;
+  font: 14px sans-serif;
+  font-weight: 600;
+  padding: 0px 20px;
+  margin-bottom: 60px;
+  text-transform: capitalize;
+}
+.bottom-col li:first-child {
+  margin-left: 210px;
+}
+small {
+  display: block;
+  color: rgb(122, 122, 122);
+  padding-bottom: 50px;
+}
