@@ -344,7 +344,7 @@ Footer
   color: rgb(122, 122, 122);
   margin: 10px;
  }
- .path:hover a {
+ .path a:hover {
   text-decoration: underline;
  }
  .path-last {
