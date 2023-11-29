@@ -344,6 +344,9 @@ Footer
   color: rgb(122, 122, 122);
   margin: 10px;
  }
+ .path:hover a {
+  text-decoration: underline;
+ }
  .path-last {
   padding-top: 15px;
  }
