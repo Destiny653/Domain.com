@@ -65,6 +65,12 @@ img {
   height: 40px;
   width: auto;
 }
+.img-part {
+  position: relative;
+}
+.img-part {
+   margin-left: 7%;
+}
 .part {
   height: 25px;
   width: 150px;
@@ -73,30 +79,25 @@ img {
 .top li {
   padding: 0 10px;
 }
-.container li,
-.blend {
+.container {
+  width: 1440;
+  padding-left: 7%;
+}
+
+.container li {
   display: inline-block;
   font: 14px Lato, sans-serif;
   font-weight: 600;
-  padding: 35px 6px;
+  padding: 35px .1%;
 }
-.part {
-  margin-left: 79px;
-  margin-right: 40px;
-}
- .blend {
-  margin-left: 79px;
-}
-.blend li {
-  padding: 0 20px;
+.blink {
+  margin-left: 1%;
 }
 form {
   width: 83%;
-  margin: auto;
   height: 60px;
   background: none;
   display: flex;
-  align-items: center;
   margin-bottom: 10px;
 }
 form input {
@@ -104,31 +105,40 @@ form input {
   width: 70%;
   height: 100%;
   border: 0;
-  padding-left: 55px;
   font-size: 25px;
-  outline: 0;
   background: #fff;
   border-radius: 5px;
 }
 .container a {
   text-decoration: none;
-  color: rgb(53, 48, 48);
+  color: #333;
+  font: normal 700 14px/22px Lato, sans-serif;
 }
-.sub-chain h3, 
-.sub-chain p,
+.sub-chain {
+  padding-left: 7%;
+}
+.sub-chain, h3 + p,
 .sub-chain a {
-  margin: 0 0 15px 115px;
   color: #fff;
-  font: 14px Lato, Helvetica, sans-serif;
-  font-weight: 600;
   text-decoration: none;
+  padding-bottom: 20px;
+}
+.sub-chain a {
+  font: normal 700 14px/17px Lato, Helvetica, sans-serif; 
+}
+.sub-chain a:hover{
+  text-decoration: underline;
+}
+.sub-chain h3 {
+  font: normal 900 14px/17px Lato, Helvetica, sans-serif; 
 }
 .sub-chain p {
-  font: 48px Lato, Helvetica, sans-serif;
+  font: normal 900 48px/55px Lato, Helvetica, sans-serif;
 }
 .chain {
   padding: 100px 0 150px 0;
-  background: lightblue;
+  background: url(https://newfold.scene7.com/is/image/NewfoldDigital/domain-name-search-hero-l?wid=1440&qlt=100);
+  background-repeat: no-repeat;
 }
 
 /*
@@ -148,7 +158,7 @@ Typography
 .top {
   display: flex;
   border-left: 2px solid rgba(128, 128, 128, 0.63);
-  margin-left: 89px;
+  margin-left: 7%;
   line-height: 40px;
   height: 40px;
 }
@@ -209,17 +219,17 @@ Hover list
   position: absolute;
   background: #fff;
 }
-.subdom li {
+ .subdom li {
   display: block;
   margin: 20px 0;
   padding: 10px 10px;
   text-transform: capitalize;
 }
-.subdom input {
+ .subdom input {
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.534);
 }
-.subdom input {
+ .subdom input {
   padding: 10px 15px;
 }
 .blink-hov {
@@ -307,23 +317,37 @@ Footer
   display: inline-block;
   margin: 30px 20px 40px 0;
   text-transform: capitalize;
-  font: 14px Lato, sans-serif;
+  font: normal 700 16px/17px Lato, Helvetica, sans-serif;
   font-weight: 600;
-  color: deepskyblue;
+  color: #2a9dbc;
  }
  .main-header li:first-child {
   margin: 0 80px;
-  color: #000;
+  margin-left: 7%;
+  color: #333;
+  font: normal 700 16px/22px Lato, Helvetica, sans-serif;
+ }
+ .spacer {
+  padding-left: 70px;
  }
  .col-2-3 {
   padding-left: 36%;
-  background: rgb(216, 211, 211);
+  background: linear-gradient(90deg, rgb(182, 56, 55) 36%, rgb(51, 51, 51) 0px);
+  position: relative;
+ }
+ .col-2-3 img {
+  position: absolute;
+  width: 260px;
+  height: auto;
+  left: 14%;
+  bottom: 37%;
  }
  .head-intro p{
   display: inline-block;
+  color: #fff;
   margin-right: 10px;
   width: 300px;
-  font: 26px Lato, Helvetica, sans-serif;
+  font: normal 300 26px/32px Lato, Helvetica, sans-serif;
  }
  .head-intro {
   padding-top: 50px;
@@ -334,15 +358,12 @@ Footer
   padding: 12px 35px 12px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
-  border: 1px solidd #ddd;
+  border: 1px solid #ddd;
   vertical-align: top;
  }
- .path {
-  display: inline-block;
-  vertical-align: top;
-  color: rgb(122, 122, 122);
-  margin: 10px;
+ .head-intro input::placeholder {
+  color: #0000006c;
+  font: normal 300 24px/32px Lato, sans-serif;
  }
  .path a:hover {
   text-decoration: underline;
@@ -354,22 +375,24 @@ Footer
   margin: 20px 0;
  }
  .path {
-  font: 14px Lato, sans-serif;
-  font-weight: 600;
+  display: inline-block;
+  vertical-align: top;
+  color: #999;
+  margin: 10px;
+  font: normal 400 14px/17px Lato, Helvetica, sans-serif;
   text-transform: uppercase;
   width: 150px;
  }
  .mentor li a {
   text-decoration: none;
   text-transform: capitalize;
-  font: 14px Lato, sans-serif;
-  font-weight: 600;
+  font: normal 400 14px/18px Lato, Helvetica, sans-serif;
   color: #fff;
  }
  .bottom-col li {
   display: inline-block;
-  font: 14px sans-serif;
-  font-weight: 600;
+  color: #fff;
+  font: normal 400 14px/18px Lato, Helvetica, sans-serif;
   padding: 0px 20px;
   margin-bottom: 60px;
   text-transform: capitalize;
