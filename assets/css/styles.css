@@ -53,32 +53,30 @@ CUSTOM STYLES
 =========================================================
 */
  
-section{
+/* section {
     width: 300px;
     /* border-color: black; */
     /* border: 6px solid #949599; */
-    background-color: beige ;
-    display: inline-flexbox;
+    /* display: inline-flexbox; */
     /* margin: 70px; */
-}
-img{
+} */
+img {
     width: 400px;
     float: right;
 }
-.container {
+.container-ken {
     width: 300px;
     margin: 70px 100px;
     padding:10px 20px;
 }
-h1{
+.hone {
     font-size: larger;
     font-weight: bolder;
 }
  
 
-h4{
+.hfour {
     color: rgb(0, 0, 0);
-    background-color: ;
     font-size: 48px;
     text-align: left;
     font-weight: 700;
@@ -87,7 +85,7 @@ h4{
     font-style: normal;
 }
 
-.theme{
+.theme {
     color: rgb(226, 71, 71);
     font-family: "Lato";
 }
@@ -380,7 +378,7 @@ li .btn:hover {
 BUTTON STYLES
 =================================================
 */
-button {
+.btn-ken {
     background-color: white;
     color: black;
     border: 2px solid;
@@ -390,7 +388,7 @@ button {
     border-radius: 4px;
     margin-top: 8px;
 }
-button a :hover {
+.btn-ken a:hover {
     background-color: black transparent;
 }
 /* 
