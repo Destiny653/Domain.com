@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+ /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,18 +12,18 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+ /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -47,6 +47,50 @@ table {
   border-spacing: 0;
 }
 
+/*
+=========================================================
+CUSTOM STYLES
+=========================================================
+*/
+ 
+section{
+    width: 300px;
+    /* border-color: black; */
+    /* border: 6px solid #949599; */
+    background-color: beige ;
+    display: inline-flexbox;
+    /* margin: 70px; */
+}
+img{
+    width: 400px;
+    float: right;
+}
+.container {
+    width: 300px;
+    margin: 70px 100px;
+    padding:10px 20px;
+}
+h1{
+    font-size: larger;
+    font-weight: bolder;
+}
+ 
+
+h4{
+    color: rgb(0, 0, 0);
+    background-color: ;
+    font-size: 48px;
+    text-align: left;
+    font-weight: 700;
+    margin: 0 0 0 15px;
+    font-family: Lato, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.theme{
+    color: rgb(226, 71, 71);
+    font-family: "Lato";
+}
 /*
 =============================================
 Grid 
@@ -144,7 +188,6 @@ form input {
   background: url(https://newfold.scene7.com/is/image/NewfoldDigital/domain-name-search-hero-l?wid=1440&qlt=100);
   background-repeat: no-repeat;
 }
-
 /*
 =============================================
 Typography 
@@ -330,8 +373,28 @@ button:hover {
 li .btn:hover {
   color: #fff;
   background: #e24747;;
+=======
+>>>>>>> 46512c1f11552d4bcd183cf803071b8ca2b760ed
 }
  
+/* 
+=================================================
+BUTTON STYLES
+=================================================
+*/
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    padding: 10px 200px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+button a :hover {
+    background-color: black transparent;
+}
 /* 
 ===========================================
 Footer
