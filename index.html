@@ -7,7 +7,8 @@
     <title>Domain.com</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+  </head>
 
 <body>
     <header>
@@ -20,12 +21,10 @@
         <nav>
             <ul>
                 <div class="container">
-                    <li class="img-part"><a href="#"><img src="assets/images/top2.png" alt="dom tag" class="part"></a></li>
-                    <li class="domain"><a href="#">DOMAINS
-                        <svg width="13" height="10" viewBox="0 0 42 25">
-                            <path d="M3 3L21 21L39 3" stroke="red" stroke-width="9" stroke-linecap="round"/>
-                        </svg>
-                    </a>
+                    <li><a href="#"><img src="assets/images/top2.png" alt="dom tag" class="part"></a></li>
+                    <li class="domain"><span>
+                        <a href="#">DOMAIN<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    </span>
                         <div class="subdom">
                             <ul>
                                 <li>
@@ -43,7 +42,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="domain"><a href="#">WEBSITE BUILDER</a>
+                    <li class="domain"><a href="#">WEBSITE BUILDER <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg></a>
                         <div class="subdom">
                             <ul>
                                 <li><a href="#">website builder</a></li>
@@ -51,7 +52,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="domain"><a href="#">EMAIL & MARKETING</a>
+                    <li class="domain"><a href="#">EMAIL & MARKETING <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg></a>
                         <div class="subdom">
                             <ul>
                                 <li><a href="#">google workspace / g duite</a></li>
@@ -59,7 +62,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="domain"><a href="#">WEB HOSTING</a>
+                    <li class="domain"><a href="#">WEB HOSTING <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg></a>
                         <div class="subdom">
                             <ul>
                                 <li><a href="#">hosting plans</a></li>
@@ -68,7 +73,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="domain"><a href="#">SECURITY</a>
+                    <li class="domain"><a href="#">SECURITY <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="arrow" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                      </svg></a>
                         <div class="subdom">
                             <ul>
                                 <li><a href="#">SSL certificates</a></li>
@@ -100,7 +107,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="blink"><a href="#" class="line">cart</a>
+                        <li class="blink cart-con"><a href="#" class="line"><img src="https://www.web.com/content/dam/domain/minicart/cartIcon.svg" alt=""></a>
                             <div class="blink-hov cart">
                                 <ul class="cart-block">
                                     <li>
@@ -121,7 +128,8 @@
             <h3>DOMAIN NAME SEARCH</h3>
             <p class="not">It all starts with a great domain</p>
             <form>
-                <input type="text" name="text" placeholder="Find a domain name">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" name="text"  placeholder="Find a domain name" required>
                 <button>search</button>
             </form>
             <a href="#" class="not">I want to transfer my domain instead</a>

@@ -176,6 +176,14 @@ Anchors
 ============================================ 
  */
 
+ .cart-con img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-style: normal;
+  height: 18px;
+  cursor: pointer;
+  vertical-align: bottom;
+ }
 .subdom a:hover,
 .line:hover {
   text-decoration: underline;
@@ -207,6 +215,14 @@ Anchors
   text-transform: uppercase;
   text-align: center;
   border-radius: 5px;  
+}
+.arrow {
+  height: 15px;
+  padding-left: 4px;
+  font-weight: 900;
+}
+.domain span:hover {
+  color: red;
 }
 
 /*
@@ -281,13 +297,13 @@ button {
   padding: 0 45px;
   margin-left: 13px;
   color: #fff;
-  background: rgb(214, 55, 55);
+  background: rgb(212, 82, 82);
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
 }
 button:hover {
-  background: rgb(173, 19, 19);
+  background: rgb(151, 42, 42);
 }
 .blink-hov button  {
   margin: 20px 0 20px 21px;
@@ -315,6 +331,7 @@ li .btn:hover {
   color: #fff;
   background: #e24747;;
 }
+ 
 /* 
 ===========================================
 Footer
