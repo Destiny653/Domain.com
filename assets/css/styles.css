@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+ /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,455 +12,87 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block;
+	display: block;
 }
-body {
-  line-height: 1;
-}
-ol, ul, li{
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /*
-=============================================
-Grid 
-=============================================
+============================================================================================================================================== 
+CUSTOM STYLES
+===============================================================================================================================================
 */
-
-*,
-*::before,
-*::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body{
+    margin: 0 auto;
+    font-family: "Lato";
 }
-img {
-  height: 40px;
-  width: auto;
+li {
+    list-style: decimal;
 }
-.img-part {
-  position: relative;
-  margin-right: 4%;
+section{
+    width: 300px;
+    /* border-color: black; */
+    /* border: 6px solid #949599; */
+    background-color: beige ;
+    display: inline-flexbox;
+    /* margin: 70px; */
 }
-.part {
-  height: 25px;
-  width: 150px;
-  margin-bottom: -7px;
-}
-.top li {
-  padding: 0 10px;
-}
-.top img {
-  height: 43px;
+img{
+    width: 400px;
+    float: right;
 }
 .container {
-  width: 1440;
-  padding-left: 9%;
+    width: 300px;
+    margin: 70px 100px;
+    padding:10px 20px;
 }
+h1{
+    font-size: larger;
+    font-weight: bolder;
+}
+ 
 
-.container li {
-  display: inline-block;
-  font: 14px Lato, sans-serif;
-  font-weight: 600;
-  padding: 30px .2%;
+h4{
+    color: rgb(0, 0, 0);
+    background-color: ;
+    font-size: 48px;
+    text-align: left;
+    font-weight: 700;
+    margin: 0 0 0 15px;
+    font-family: Lato, Helvetica, sans-serif;
+    font-style: normal;
 }
-.container .blink {
-  padding-left: 3%;
-}
-.blink-first {
-  margin-left: 8%;
-}
-form {
-  width: 90%;
-  height: 60px;
-  background: none;
-  display: flex;
-  margin-bottom: 10px;
-}
-form input {
-  flex: 1;
-  height: 100%;
-  border: 0;
-  font: normal 300 26px/32px Lato, sans-serif;
-  padding-left: 25px;
-  background: #fff;
-  border-radius: 5px;
-}
-.container a {
-  text-decoration: none;
-  color: #333;
-  font: normal 700 14px/22px Lato, sans-serif;
-}
-.sub-chain {
-  padding-left: 8.5%;
-}
-.sub-chain, h3 + p,
-.sub-chain a {
-  color: #fff;
-  text-decoration: none;
-  padding-bottom: 20px;
-}
-.sub-chain a {
-  font: normal 700 14px/17px Lato, Helvetica, sans-serif; 
-}
-.sub-chain a:hover{
-  text-decoration: underline;
-}
-.sub-chain h3 {
-  font: normal 900 14px/17px Lato, Helvetica, sans-serif; 
-}
-.sub-chain p {
-  font: normal 900 48px/55px Lato, Helvetica, sans-serif;
-}
-.chain {
-  padding: 100px 0 150px 0;
-  background: url(https://newfold.scene7.com/is/image/NewfoldDigital/domain-name-search-hero-l?wid=1440&qlt=100);
-  background-repeat: no-repeat;
-}
+.theme{
+    color: rgb(226, 71, 71);
+    font-family: "Lato";
 
-/*
-=============================================
-Typography 
-============================================= 
-*/
-
-.top a,
-.container li {
-  color: #fff;
-  text-decoration: none;
-}
-.chain ::placeholder {
-  color: grey;
-}
-.top {
-  display: flex;
-  border-left: 2px solid rgba(128, 128, 128, 0.473);
-  margin-left: 8.5%;
-  line-height: 43px;
-  height: 43px;
-}
-.stress {
-  background: #000;
-}
-
-/*
-============================================
-Anchors 
-============================================ 
- */
-
-.subdom a:hover,
-.line:hover {
-  text-decoration: underline;
-}
-.top li:hover {
-  background: #dacece3d;
-}
-.cart {
-  width: 21%;
-}
-.cart-block div {
-  border-bottom: 1px solid black;
-  margin: 15px 15px;
-  width: 100%;
-}
-.cart-block div:first-child {
-  font-size: 32px;
-  padding: 20px 0;
-}
-.mid-cart {
-  padding-bottom: 15px;
-  text-align: center;
-}
-.cart-block div:last-child {
-  border: none;
-  color: #fff;
-  background: #000;
-  padding: 20px 0;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 5px;  
-}
-
-/*
-============================================
-Hover list 
-============================================ 
- */
-
- .subdom {
-  display: none;
- }
-.domain:hover .subdom {
-  display: block;
-  position: absolute;
-  background: #fff;
-}
-.subdom ul {
-  width: 250px;
-}
- .subdom li {
-  display: block;
-  margin: 20px 0;
-  padding: 10px 10px;
-  text-transform: capitalize;
-}
- .subdom input {
-  border-radius: 5px;
-  border: 1px solid rgba(128, 128, 128, 0.534);
-}
- .subdom input {
-  padding: 10px 15px;
-}
-.blink-hov {
-  display: none;
-}
-.blink-first:hover .blink-hov,
-.blink:hover .blink-hov {
-  display: block;
-  position: absolute;
-  background: #fff;
-}
-.blink-hov li {
-  display: block;
-  color: #000;
-  padding: 0;
-}
-.blink-hov ul {
-  width: 250px;
-}
-.blink-hov p {
-  margin-bottom: 20px 0;
-  font-weight: 100;
-  margin-left: 20px;
-  font: normal 400 14px/22px Lato, sans-serif;
-  font-size: small;
-}
-.blink-hov .point {
-  font-size: 20px;
-  margin-top: 20px;
-  color: #666666c7;
-  font: normal 400 20px/22px Lato, sans-serif;
-}
-
-/*
-=============================================
-Button 
-=============================================
-*/
-
-button {
-  height: 100%;
-  padding: 0 45px;
-  margin-left: 13px;
-  color: #fff;
-  background: rgb(214, 55, 55);
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-}
-button:hover {
-  background: rgb(173, 19, 19);
-}
-.blink-hov button  {
-  margin: 20px 0 20px 21px;
-  background: #2a9dbc;
-  color: #000;
-  text-transform: uppercase;
-  padding: 12px;
-  width: 210px;
-}
-.blink-hov button:hover {
-  color: #fff;
-  background: rgb(12, 60, 77);
-
-}
-.blink-hov .btn {
-  margin: 20px 21px;
-  color: rgb(228, 21, 21);
-  border: 2px solid rgb(228, 21, 21);
-  width: 210px;
-  background: #fff;
-  text-transform: uppercase;
-  padding: 10px;
-}
-li .btn:hover {
-  color: #fff;
-  background: #e24747;;
 }
 /* 
-===========================================
-Footer
-===========================================
- */
-
- .main-header li {
-  display: inline-block;
-  margin: 30px 20px 40px 0;
-  text-transform: capitalize;
-  font: normal 700 16px/17px Lato, Helvetica, sans-serif;
-  font-weight: 600;
-  color: #2a9dbc;
- }
- .main-header li:first-child {
-  margin: 0 80px;
-  margin-left: 7%;
-  color: #333;
-  font: normal 700 16px/22px Lato, Helvetica, sans-serif;
- }
- .spacer {
-  padding-left: 20px;
- }
- .col-2-3 {
-  padding-left: 36%;
-  background: linear-gradient(90deg, rgb(182, 56, 55) 34%, rgb(51, 51, 51) 0px);
-  position: relative;
- }
- .col-2-3 .logo-img {
-  position: absolute;
-  width: 260px;
-  height: auto;
-  left: 12%;
-  bottom: 37%;
- }
- .head-intro p{
-  display: inline-block;
-  color: #fff;
-  margin-right: 10px;
-  width: 300px;
-  font: normal 300 26px/32px Lato, Helvetica, sans-serif;
- }
- .head-intro {
-  padding-top: 50px;
-  margin-bottom: 50px;
- }
-.head-intro input {
-  width: 376px;
-  padding: 12px 35px 12px 20px;
-  border: none;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  vertical-align: top;
- }
- .head-intro input::placeholder {
-  color: #0000006c;
-  font: normal 300 24px/32px Lato, sans-serif;
- }
- .path a:hover {
-  text-decoration: underline;
- }
- .path-last {
-  padding-top: 15px;
- }
- .mentor li {
-  margin: 20px 0;
- }
- .path {
-  display: inline-block;
-  vertical-align: top;
-  color: #999;
-  margin: 10px;
-  font: normal 400 14px/17px Lato, Helvetica, sans-serif;
-  text-transform: uppercase;
-  width: 150px;
- }
- .mentor li a {
-  text-decoration: none;
-  text-transform: capitalize;
-  font: normal 400 14px/18px Lato, Helvetica, sans-serif;
-  color: #fff;
- }
- .bottom-col li {
-  display: inline-block;
-  color: #fff;
-  font: normal 600 14px/17px Lato, Helvetica, sans-serif;
-  padding: 0px 20px;
-  margin-bottom: 60px;
-  text-transform: capitalize;
-}
-.bottom-col li:first-child {
-  margin-left: 210px;
-}
-small {
-  color: rgb(122, 122, 122);
-  padding-right: 8%;
-  font: normal 400 14px/18px Lato, Helvetica, sans-serif;;
-}
-
-/*
-==============================================
-Small-Footer 
-============================================== 
- */
-
-.small-footer img {
-  height: 20px;
-  width: auto;
-  vertical-align: bottom;
-  padding: 0 12px;
-}
-.small-footer img:nth-child(6) {
-  height: 15px;
-  vertical-align: top;
-}
-.small-footer {
-  padding-bottom: 50px;
-}
-/* Chat style */
-
-.show .text {
-    background: #e24747;
-    border: 2px solid #e24747;
-}
-.show {
-    opacity: 1;
-    transition: opacity 400ms;
-    right: 28px;
-}
-.show .text {
-    box-sizing: border-box;
+======================================================================================================================================================
+BUTTON STYLES
+======================================================================================================================================================
+*/
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid;
+    padding: 10px 200px;
     text-align: center;
-    line-height: 54.75px;
-    position: fixed;
-    bottom: 24px;
-    width: 56px;
-    height: 54.75px;
-    box-shadow: 2.11213px 4.22427px 6.3364px rgba(0, 0, 0, 0.23);
-    border-radius: 63.364px 63.364px 0px 63.364px;
-    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 8px;
 }
-.show .text {
-  color: #fff;
-  right: 40px;
-}
-.show .text:hover {
-background-color: #fff;
-color: red;
+button a :hover {
+    background-color: black transparent;
 }
