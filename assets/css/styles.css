@@ -1,4 +1,4 @@
- /* http://meyerweb.com/eric/tools/css/reset/ 
+ /* /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -53,17 +53,6 @@ CUSTOM STYLES
 =========================================================
 */
  
-/* section {
-    width: 300px;
-    /* border-color: black; */
-    /* border: 6px solid #949599; */
-    /* display: inline-flexbox; */
-    /* margin: 70px; */
-} */
-img {
-    width: 400px;
-    float: right;
-}
 .container-ken {
     width: 300px;
     margin: 70px 100px;
@@ -79,16 +68,13 @@ img {
     color: rgb(0, 0, 0);
     font-size: 48px;
     text-align: left;
-    font-weight: 700;
-    margin: 0 0 0 15px;
-    font-family: Lato, Helvetica, sans-serif;
-    font-style: normal;
+    margin-left: 15px;
+    font: normal 700 48px lato, Helvetica, sans-serif;
 }
-
 .theme {
     color: rgb(226, 71, 71);
     font-family: "Lato";
-}
+} */
 /*
 =============================================
 Grid 
@@ -145,14 +131,15 @@ form {
   background: none;
   display: flex;
   margin-bottom: 10px;
+  position: relative;
 }
 form input {
   flex: 1;
   height: 100%;
   border: 0;
   font: normal 300 26px/32px Lato, sans-serif;
-  padding-left: 25px;
-  background: #fff;
+  padding-left: 50px;
+  background: #ffffff;
   border-radius: 5px;
 }
 .container a {
@@ -262,8 +249,52 @@ Anchors
   padding-left: 4px;
   font-weight: 900;
 }
-.domain span:hover {
-  color: red;
+@domain span:hover {
+  .fa-angle-down{
+    color: red;
+  }
+}
+
+/*
+============================================
+Icon 
+============================================ 
+ */
+ 
+.fa-top-search {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    color: #cdcdcd;
+    font-size: 20px;
+  }
+.sub-chain i {
+  font-size: 30px;
+}
+.head-intro .fa-search {
+  color: #ca2525;
+  vertical-align: top;
+  line-height: 40px;
+  padding-left: 6%;
+}
+.head-intro i {
+  font-size: 20px;
+  font-weight: 500;
+}
+.main-header a:hover,
+.bottom-col li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fa-arrow-right {
+  padding-left: 4px;
+}
+.fa-arrow-right:hover {
+  vertical-align: bottom;
+  transform: translateX(10px);
+  transition: all .3s ease 0s;
 }
 
 /*
@@ -397,15 +428,23 @@ Footer
 ===========================================
  */
 
- .main-header li {
+ .main-header {
+  border-top: 4px solid #e3e3e3;
+  line-height: 37px;
+  padding: 25px 0;
+  margin-bottom: 10px;
+ }
+ .main-header a {
   display: inline-block;
-  margin: 30px 20px 40px 0;
   text-transform: capitalize;
   font: normal 700 16px/17px Lato, Helvetica, sans-serif;
   font-weight: 600;
   color: #2a9dbc;
  }
- .main-header li:first-child {
+ .main-header p {
+  display: inline-block;
+ }
+ .main-header span {
   margin: 0 80px;
   margin-left: 7%;
   color: #333;
@@ -438,8 +477,9 @@ Footer
   margin-bottom: 50px;
  }
 .head-intro input {
-  width: 376px;
-  padding: 12px 35px 12px 20px;
+  display: inline-block;
+  width: 290px;
+  height: 40px;
   border: none;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -447,7 +487,8 @@ Footer
  }
  .head-intro input::placeholder {
   color: #0000006c;
-  font: normal 300 24px/32px Lato, sans-serif;
+  font: normal 300 24px/20px Lato, sans-serif;
+  padding-left: 10px;
  }
  .path a:hover {
   text-decoration: underline;
