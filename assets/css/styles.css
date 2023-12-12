@@ -53,10 +53,8 @@ CUSTOM STYLES
 =========================================================
 */
  
-.container-ken {
-    width: 300px;
-    margin: 70px 100px;
-    padding:10px 20px;
+body {
+  background-color: #fafafa;
 }
 .hone {
     font-size: larger;
@@ -67,14 +65,15 @@ CUSTOM STYLES
 .hfour {
     color: rgb(0, 0, 0);
     font-size: 48px;
-    text-align: left;
-    margin-left: 15px;
+    margin-left: 25px;
+    padding-top: 30px;
     font: normal 700 48px lato, Helvetica, sans-serif;
 }
 .theme {
     color: rgb(226, 71, 71);
     font-family: "Lato";
-} */
+}
+
 /*
 =============================================
 Grid 
@@ -131,7 +130,6 @@ form {
   background: none;
   display: flex;
   margin-bottom: 10px;
-  position: relative;
 }
 form input {
   flex: 1;
@@ -173,6 +171,41 @@ form input {
   background: url(https://newfold.scene7.com/is/image/NewfoldDigital/domain-name-search-hero-l?wid=1440&qlt=100);
   background-repeat: no-repeat;
 }
+.flex-item p {
+  font: normal 400 16px/22px Lato, Helvetica, sans-serif;
+  padding: 15px 25px;
+  color: #333;
+}
+.price-tag {
+  font: normal 300 22px/27px Lato, Helvetica, sans-serif;
+  color: #333;
+  margin-left: 25px;
+}
+.cont-p {
+  font: normal 700 26px/32px Lato, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.container-2-head {
+  text-align: center;
+}
+.flex-container-2 span {
+  font: normal 700 18px/22px Lato, Helvetica, sans-serif;
+  color: #333;
+}
+.flex-container-2 p {
+  font: normal 300 16px/22px Lato, Helvetica, sans-serif;
+  color: #333;
+}
+.container-2-head .hone {
+  font: normal 600 40px/57px Lato, Helvetica, sans-serif;
+  color: #000;
+}
+.container-2-head span {
+  font: normal 300 26px/36px Lato, Helvetica, sans-serif;
+  color: #333;
+}
+
 /*
 =============================================
 Typography 
@@ -364,7 +397,7 @@ Button
 =============================================
 */
 
-button {
+.chain-button {
   height: 100%;
   padding: 0 45px;
   margin-left: 13px;
@@ -374,7 +407,7 @@ button {
   border-radius: 5px;
   text-transform: uppercase;
 }
-button:hover {
+.chain-button:hover {
   background: rgb(151, 42, 42);
 }
 .blink-hov button  {
@@ -409,19 +442,62 @@ li .btn:hover {
 BUTTON STYLES
 =================================================
 */
-.btn-ken {
-    background-color: white;
-    color: black;
-    border: 2px solid;
-    padding: 10px 200px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 4px;
-    margin-top: 8px;
+
+.btn-ken  {
+  width:315px;
+  color: #000;
+  font: normal 700 14px/17px Lato, Helvetica, sans-serif;
+  padding: 15px 40px;
+  background-color: #fff;
+  border: 3px solid #000;
+  border-radius: 5px;
+  position: relative;
+  top: 30px;
+  left: 15px;
 }
-.btn-ken a:hover {
-    background-color: black transparent;
+.btn-ken:hover {
+    background-color: black;
+    color: #fff;
 }
+
+/* 
+===========================================
+Flex
+===========================================
+ */
+
+ .roll-up {
+  position: relative;
+  top: -100px;
+ }
+ .flex-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+ }
+ .flex-item {
+  max-width: 30%;
+  width: 100%;
+  height: 300px;
+  margin: 15px 15px;
+  border-radius: 6px;
+  background-color: #fff;
+ }
+ .flex-container-2 {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative; 
+ }
+ .flex-item-2 {
+  max-width: 30%;
+  width: 100%;
+  margin: 15px 15px;
+ }
+
 /* 
 ===========================================
 Footer
