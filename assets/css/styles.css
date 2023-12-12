@@ -193,17 +193,29 @@ form input {
   font: normal 700 18px/22px Lato, Helvetica, sans-serif;
   color: #333;
 }
+.flex-container-2 img {
+  position: relative;
+  right: 25px;
+}
 .flex-container-2 p {
   font: normal 300 16px/22px Lato, Helvetica, sans-serif;
   color: #333;
+  margin-top: 20px;
 }
 .container-2-head .hone {
   font: normal 600 40px/57px Lato, Helvetica, sans-serif;
   color: #000;
+  margin-bottom: 10px;
 }
 .container-2-head span {
   font: normal 300 26px/36px Lato, Helvetica, sans-serif;
   color: #333;
+}
+.col-1-2 img {
+  height: 400px;
+}
+.flex-item-2 img {
+  height: 30px;
 }
 
 /*
@@ -229,6 +241,48 @@ Typography
 }
 .stress {
   background: #000;
+}
+.col-1-2 h1 {
+  font:normal 600 40px/57px Lato, Helvetica, sans-serif;
+  color: #000;
+}
+.col-1-2 p {
+  font: normal 300 26px/32px Lato, Helvetica, sans-serif;
+  color: #000;
+  padding: 10px 0;
+}
+.col-1-2 li {
+  font: normal 400 16px/22px Lato, Helvetica, sans-serif;
+  list-style-type: disc;
+  color: #666666;
+  padding: 5px 0;
+  margin-left: 20px;
+}
+.break-point div {
+  width: 1210px;
+  padding: 20px 30px 20px 30px;
+  margin: 20px auto;
+  background-color: #fff;
+  display: flex;
+}
+.break-point h1 {
+  font: normal 600 22px/22px Lato, Helvetica, sans-serif;
+  columns: #000;
+}
+.break-point p {
+  font: normal 400 16px/22px Lato, Helvetica, sans-serif;
+  color: #333;
+}
+.break-point span p {
+  font: normal 300 26px/32px Lato, Helvetica, sans-serif;
+  color: #000;
+  text-align: center;
+}
+.break-point li {
+  font: normal 400 16px/22px Lato, Helvetica, sans-serif;
+  color: #666666;
+  list-style: disc;
+  margin-left: 15px;
 }
 
 /*
@@ -455,6 +509,13 @@ BUTTON STYLES
   top: 30px;
   left: 15px;
 }
+.col-1-2 span {
+  font: normal 700 14px/17px Lato, Helvetica, sans-serif;
+  padding: 20px 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
 .btn-ken:hover {
     background-color: black;
     color: #fff;
@@ -491,11 +552,26 @@ Flex
   display: flex;
   flex-wrap: wrap;
   position: relative; 
+  padding-top: 50px;
+  margin-bottom: 120px;
  }
  .flex-item-2 {
   max-width: 30%;
   width: 100%;
-  margin: 15px 15px;
+  margin: 15px 18px;
+  display: flex;
+ }
+ .container-flex {
+  display: flex;
+  max-width: 1150px;
+  height: 530px;
+  margin: 0 auto;
+ }
+ .btn-bot {
+  padding-top: 60px;
+ }
+ .col-1-2 {
+  width: 50%;
  }
 
 /* 
