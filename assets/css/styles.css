@@ -48,46 +48,11 @@ table {
 }
 
 /*
-=========================================================
-CUSTOM STYLES
-=========================================================
-*/
- 
-body {
-  background-color: #fafafa;
-}
-.hone {
-    font-size: larger;
-    font-weight: bolder;
-}
- 
-
-.hfour {
-    color: rgb(0, 0, 0);
-    font-size: 48px;
-    margin-left: 25px;
-    padding-top: 30px;
-    font: normal 700 48px lato, Helvetica, sans-serif;
-}
-.theme {
-    color: rgb(226, 71, 71);
-    font-family: "Lato";
-}
-
-/*
 =============================================
 Grid 
 =============================================
 */
 
-*,
-*::before,
-*::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 img {
   height: 40px;
   width: auto;
@@ -284,6 +249,27 @@ Typography
   list-style: disc;
   margin-left: 15px;
 }
+body {
+  background-color: #fafafa;
+}
+.hone {
+    font-size: larger;
+    font-weight: bolder;
+}
+ 
+
+.hfour {
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    margin-left: 25px;
+    padding-top: 30px;
+    font: normal 700 48px lato, Helvetica, sans-serif;
+}
+.theme {
+    color: rgb(226, 71, 71);
+    font-family: "Lato";
+}
+
 
 /*
 ============================================
