@@ -95,6 +95,7 @@ form {
   background: none;
   display: flex;
   margin-bottom: 10px;
+  /* position: absolute; */
 }
 form input {
   flex: 1;
@@ -182,6 +183,52 @@ form input {
 .flex-item-2 img {
   height: 30px;
 }
+.final-hero {
+  display: flex;
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
+}
+.final-hero-sub img {
+  height: 300px;
+  padding-left: 20px;
+}
+.final-hero-sub2  {
+  padding: 20px 20px 0 30px;
+}
+.final-hero p {
+  font: normal 400 16px/22px Lato, Helvetica, sans-serif;
+  color: #666666;
+}
+.final-hero h3 {
+  font: normal 300 22px/27px Lato, Helvetica, sans-serif;
+  color: #666666;
+  padding: 10px 0;
+}
+.final-hero a {
+  font: normal 700 16px/17px Lato, Helvetica, sans-serif;
+  color: #2a9dbc;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.final-hero a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.final-hero-sub2 .ang {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+}
+.final-hero-sub2 a:last-child {
+  padding-top: 20px;
+}
+.hero-p {
+  font: normal  400 14px/18px Lato, Helvetica, sans-serif;
+  color: #333;
+  margin: 50px 0 70px 100px;
+}
 
 /*
 =============================================
@@ -224,15 +271,17 @@ Typography
   margin-left: 20px;
 }
 .break-point div {
-  width: 1210px;
+  width: 1070px;
   padding: 20px 30px 20px 30px;
   margin: 20px auto;
   background-color: #fff;
   display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
 }
 .break-point h1 {
-  font: normal 600 22px/22px Lato, Helvetica, sans-serif;
+  font: normal 600 22px/50px Lato, Helvetica, sans-serif;
   columns: #000;
+  height: 50px;
 }
 .break-point p {
   font: normal 400 16px/22px Lato, Helvetica, sans-serif;
@@ -370,15 +419,39 @@ Icon
   transition: all .3s ease 0s;
 }
 
+/* 
+============================================
+Drop
+============================================
+*/
+
+.break-point input {
+  /* display: none; */
+}
+.break-point .fa-angle-down {
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #e24747;
+}
+.break-point input:checked + .fa-angle-down {
+  rotate: -90deg;
+  color: #000;
+}
+
+.break-point input:checked ~ section p {
+  display: none;
+}
+
 /*
 ============================================
 Hover list 
 ============================================ 
- */
+*/
 
- .subdom {
+.subdom {
   display: none;
- }
+}
 .domain:hover .subdom {
   display: block;
   position: absolute;
@@ -388,12 +461,12 @@ Hover list
   width: 250px;
 }
  .subdom li {
-  display: block;
-  margin: 20px 0;
-  padding: 10px 10px;
-  text-transform: capitalize;
+   display: block;
+   margin: 20px 0;
+   padding: 10px 10px;
+   text-transform: capitalize;
 }
- .subdom input {
+.subdom input {
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.534);
 }
@@ -461,7 +534,7 @@ Button
 .blink-hov button:hover {
   color: #fff;
   background: rgb(12, 60, 77);
-
+  
 }
 .blink-hov .btn {
   margin: 20px 21px;
@@ -503,8 +576,8 @@ BUTTON STYLES
   border-radius: 5px;
 }
 .btn-ken:hover {
-    background-color: black;
-    color: #fff;
+  background-color: black;
+  color: #fff;
 }
 
 /* 
@@ -512,28 +585,28 @@ BUTTON STYLES
 Flex
 ===========================================
  */
-
+ 
  .roll-up {
-  position: relative;
-  top: -100px;
- }
- .flex-container {
-  max-width: 1150px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
- }
- .flex-item {
-  max-width: 30%;
-  width: 100%;
-  height: 300px;
-  margin: 15px 15px;
-  border-radius: 6px;
-  background-color: #fff;
- }
- .flex-container-2 {
-  max-width: 1150px;
+   position: relative;
+   top: -100px;
+  }
+  .flex-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .flex-item {
+    max-width: 30%;
+    width: 100%;
+    height: 300px;
+    margin: 15px 15px;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  .flex-container-2 {
+    max-width: 1150px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -548,32 +621,32 @@ Flex
   display: flex;
  }
  .container-flex {
-  display: flex;
-  max-width: 1150px;
-  height: 530px;
-  margin: 0 auto;
- }
- .btn-bot {
-  padding-top: 60px;
- }
+   display: flex;
+   max-width: 1150px;
+   height: 530px;
+   margin: 0 auto;
+  }
+  .btn-bot {
+    padding-top: 60px;
+  }
  .col-1-2 {
-  width: 50%;
- }
-
-/* 
-===========================================
-Footer
-===========================================
+   width: 50%;
+  }
+  
+  /* 
+  ===========================================
+  Footer
+  ===========================================
  */
-
+ 
  .main-header {
-  border-top: 4px solid #e3e3e3;
-  line-height: 37px;
-  padding: 25px 0;
-  margin-bottom: 10px;
+   border-top: 4px solid #e3e3e3;
+   line-height: 37px;
+   padding: 25px 0;
+   margin-bottom: 10px;
  }
  .main-header a {
-  display: inline-block;
+   display: inline-block;
   text-transform: capitalize;
   font: normal 700 16px/17px Lato, Helvetica, sans-serif;
   font-weight: 600;
