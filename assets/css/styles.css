@@ -282,7 +282,6 @@ Typography
 .break-point h1 {
   font: normal 600 22px/50px Lato, Helvetica, sans-serif;
   columns: #000;
-  height: 50px;
 }
 .break-point p {
   font: normal 400 16px/22px Lato, Helvetica, sans-serif;
@@ -430,25 +429,33 @@ Drop
   display: none;
 }
 .break-point .fa-angle-down {
-  padding-top: 7px;
-  padding-right: 20px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   color: #e24747;
-  transition: all .7s ease;
 }
-.break-point input:checked + label .fa-angle-down {
-  rotate: -90deg;
+.break-point input:checked + .spin .fa-angle-down {
   color: #000;
 }
-.break-point p {
+.spin {
+  width: auto;
+  height: 20px;
+  position: relative;
+  top: 13px;
+  right: 10px;
+  transition: all .45s ease;
+}
+.break-point input:checked + .spin {
+  transform: rotate(-90deg);
+}
+.break-point p,
+.break-point  ul {
   transition: all 7s ease;
 }
 .break-point input:checked ~ section p,
 .break-point input:checked ~ section ul {
-    max-height: 0;
-    overflow: scroll;
-    transition: all 7s ease;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #2a9dbc;
 }
 
 /*
