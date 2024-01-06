@@ -276,7 +276,7 @@ Typography
   padding: 20px 2.8%;
   margin: 20px auto;
   background-color: #fff;
-  display: flex;
+  /* display: flex; */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,.1);
 }
 .break-point h1 {
@@ -444,18 +444,30 @@ Drop
   right: 10px;
   transition: all .45s ease;
 }
+.break-point label::before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  width: 18px;
+  height: 18px;
+  background-color: aquamarine;
+  transition: all 3s ease;
+}
+.break-point input:checked + label:before {
+  transform: rotate(-90deg);
+}
 .break-point input:checked + .spin {
   transform: rotate(-90deg);
 }
-.break-point p,
-.break-point  ul {
-  transition: all 7s ease;
+.break-point section p {
+  transition: all 3s ease;
 }
-.break-point input:checked ~ section p,
-.break-point input:checked ~ section ul {
+.break-point input:checked ~ section p {
   max-height: 0;
   overflow: hidden;
   background-color: #2a9dbc;
+  transition: all 3s ease;
 }
 
 /*
