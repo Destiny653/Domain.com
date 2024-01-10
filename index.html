@@ -21,7 +21,9 @@
 
         <!-- Dropdown header -->
 
+
         <div class="dropdown-header group">
+
             <input type="checkbox" id="toggle">
             <label for="toggle">
                 <div class="burger-container">
@@ -33,14 +35,21 @@
             <ul>
                 <li class="dropdown-menu"><img src="./assets/images/domain-image-header-2.png" alt="domain domain-icon"
                         class="dropdown-tag"></li>
-                <section class="burger-positioned">
+
+                <section class="burger-positioned" style="display: inline-block;">
+
                     <li class="dropdown-menu include big bug"><a href="#">HOME</a></li>
-                    <li class="dropdown-menu bug"><a href="#">DOMAIN<i class="fa fa-angle-down"
-                                aria-hidden="true"></i></a>
+
+                    <li class="dropdown-menu bug">
+                        <input type="checkbox" name="checkbox" id="burger-drop">
+                        <label for="burger-drop">
+                            <P>DOMAIN<i class="fa fa-angle-down" aria-hidden="true"></i></P>
+                        </label>
                         <ul>
                             <li>
                                 <input type="text" name="text" placeholder="Find a domain">
-                                <i class="fa fa-search fa-top-search" aria-hidden="true"></i>
+                                <i class="fa fa-search fa-top-search" aria-hidden="true"
+                                    style="color: rgb(182, 37, 37); padding-top: 25px;"></i>
                             </li>
                             <li><a href="#">seach for domain</a></li>
                             <li><a href="#"> your domain</a></li>
@@ -55,40 +64,53 @@
                     </li>
 
                     <li class="dropdown-menu bug">
-                        <a href="#">WEBSITE BUILDER<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" name="checkbox" id="burger-drop1">
+                        <label for="burger-drop1">
+                            <p>WEBSITE BUILDER<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        </label>
                         <ul>
-                            <li><a href="#">website builder</a></li>
+                            <li style="padding-top: 20px;"><a href="#">website builder</a></li>
                             <li><a href="#">web design service</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown-menu bug">
-                        <a href="#">EMAIL & MARKETING<i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                        <input type="checkbox" name="checkbox" id="burger-drop2">
+                        <label for="burger-drop2">
+                            <p>EMAIL & MARKETING<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        </label>
                         <ul>
-                            <li><a href="#">google workspace / g suite</a></li>
+                            <li style="padding-top: 20px;"><a href="#">google workspace / g suite</a></li>
                             <li><a href="#">marketing services</a></li>
                         </ul>
                     </li>
 
+
                     <li class="dropdown-menu bug">
-                        <a href="#">WEB HOSTING<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" name="checkbox" id="burger-drop3">
+                        <label for="burger-drop3">
+                            <p>WEB HOSTING<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        </label>
                         <ul>
-                            <li><a href="#">hosting plans</a></li>
+                            <li style="padding-top: 20px;"><a href="#">hosting plans</a></li>
                             <li><a href="#">wordPress hosting</a></li>
                             <li><a href="#">WP live</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown-menu bug">
-                        <a href="#">SECURITY<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <input type="checkbox" name="checkbox" id="burger-drop4">
+                        <label for="burger-drop4">
+                            <p>SECURITY<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                        </label>
                         <ul>
-                            <li><a href="#">SSL certificates</a></li>
+                            <li style="padding-top: 20px;"><a href="#">SSL certificates</a></li>
                             <li><a href="#">siteLock security</a></li>
                             <li><a href="#">compare security products</a></li>
                         </ul>
                     </li>
 
-                    <li class="dropdown-menu bug"><a href="#">Help</a>
+                    <li class="dropdown-menu hide bug"><a href="#">Help</a>
                         <ul class="help-list">
                             <h2>Chat with us</h2>
                             <p>Chat now with our support team for quick answers.</p>
@@ -99,8 +121,8 @@
                             <button class="drop-btn-2">browse articles</button>
                         </ul>
                     </li>
-                    <li class="include bug"><a href="#">Chat</a></li>
-                    <li class="dropdown-menu"><a href="#"><img
+                    <li class="dropdown-menu include bug"><a href="#">Chat</a></li>
+                    <li class="dropdown-menu cart-margin"><a href="#"><img
                                 src="https://www.web.com/content/dam/domain/minicart/cartIcon.svg" alt="cart"
                                 class="cart-image">
                             <ul class="cart-list">
@@ -111,11 +133,27 @@
                     </li>
                     <li class="dropdown-menu bug"><a href="#">Login</a></li>
                     <li class="dropdown-menu include final bug"><a href="#">Knowledge Base</a></li>
-                    <label for="search" style="position: relative;">
+                    <label for="search" class="burg-bot-search" style="position: relative;">
                         <input type="text" name="text" placeholder="Enter domain here">
                         <i class="fa fa-search fa-top-search" aria-hidden="true"></i>
                     </label>
                 </section>
+                <li class="dropdown-menu cart-margin cart-external"><a href="#">
+                        <input type="checkbox" id="cart-external">
+                        <label for="cart-external">
+                            <img src="https://www.web.com/content/dam/domain/minicart/cartIcon.svg" alt="cart"
+                                class="cart-image">
+                        </label>
+                        <ul class="cart-list">
+                        <input type="checkbox" id="cart-span">
+                        <label for="cart-span">
+                            <span>x</span>
+                        </label>
+                            <h1>cart</h1>
+                            <h4>your cart is empty.</h4>
+                            <button class="btn-cart">search for a domain</button>
+                        </ul>
+                </li>
             </ul>
         </div>
     </header>
