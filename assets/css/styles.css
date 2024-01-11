@@ -160,7 +160,7 @@ Grid
   .dropdown-header {
     margin-bottom: 30px;
   }
-  
+
   .dropdown-menu>input {
     display: none;
   }
@@ -173,13 +173,14 @@ Grid
   .burger-positioned li:nth-child(1n+1) {
     margin: 0 0.1%;
   }
-  
-    .burger-positioned li:nth-child(7) {
-      margin-left: 8.2%;
-    }
-    .burger-positioned li:nth-child(9) {
-      padding: 0 3%;
-    }
+
+  .burger-positioned li:nth-child(7) {
+    margin-left: 8.2%;
+  }
+
+  .burger-positioned li:nth-child(9) {
+    padding: 0 3%;
+  }
 
   .hero-section {
     width: 100%;
@@ -523,6 +524,7 @@ Typography
     font-weight: 600;
     color: #2a9dbc;
   }
+
   .dropdown-menu h2 {
     margin-top: 20px;
     color: #666666c9;
@@ -760,11 +762,13 @@ Typography
   .domain-resource li:first-child {
     margin-right: 3%;
   }
+
   .dropdown-header p {
     text-decoration: none;
     color: #333;
     font: normal 700 14px/22px Lato, sans-serif;
   }
+
   .include,
   .dropdown-header a,
   .big a {
@@ -930,6 +934,7 @@ Button
     border: none;
     border-radius: 5px;
     text-transform: uppercase;
+    cursor: pointer;
     color: #fff;
     background-color: #e24747;
     font: normal 400 14px/17px Lato, Helvetica, sans-serif
@@ -1051,6 +1056,7 @@ Screen sizing
     .include+label input {
       display: none;
     }
+
     .cart-external,
     .cart-external ul span {
       max-height: 0;
@@ -1081,47 +1087,55 @@ Screen sizing
   ===============================================  
   */
 
-  .dropdown-menu label p {
-    padding-left: 20px;
-  }    
-  .dropdown-menu input:checked + label p {
-    box-shadow: 0 1.5px .1px rgba(0, 0, 0, 0.23);
-  }
-  .dropdown-header p {
-    font: normal 400 14px/22px Lato, sans-serif;
-    padding: 10px 0;
-  }
+    .dropdown-menu label p {
+      padding-left: 20px;
+    }
+
+    .dropdown-menu input:checked+label p {
+      box-shadow: 0 1.5px .1px rgba(0, 0, 0, 0.23);
+    }
+
+    .dropdown-header p {
+      font: normal 400 14px/22px Lato, sans-serif;
+      padding: 10px 0;
+    }
+
     .dropdown-menu a {
       position: relative;
       padding-left: 20px;
     }
+
     .dropdown-header .fa-angle-down {
       transform: rotate(-90deg);
       position: absolute;
-      right: 0;
+      right: 5px;
     }
 
     #toggle {
       max-height: 0;
     }
 
-   .burg-bot-search>input {
+    .burg-bot-search>input {
       border: none;
-      width: 400px;
+      width: 500px;
       height: 40px;
       padding-left: 30px;
-      margin-top: 50px;
+      margin-top: -50px;
+      margin-left: 25px;
       border-radius: 5px;
-      border-bottom: 3px solid #000;
+      border-bottom: 4px solid #000;
     }
+
     .cart-external {
       position: absolute;
       right: 20px;
       top: 75px;
     }
+
     .cart-external input {
       display: none;
     }
+
     .cart-external input:checked+label~ul {
       display: block;
     }
@@ -1133,6 +1147,7 @@ Screen sizing
       color: #e24747;
       right: 10px;
     }
+
     .dropdown-menu:hover ul {
       display: none;
     }
@@ -1155,11 +1170,14 @@ Screen sizing
       max-height: 0;
       overflow: hidden;
     }
+
     .burger-positioned li ul {
       margin-top: -20px;
     }
-   .dropdown-header input:checked~ul .burger-positioned {
-    max-height: 1000px;
+
+    .dropdown-header input:checked~ul .burger-positioned {
+      max-height: 2000px;
+      background-color: #f3f3f3;
     }
 
     .burger-positioned input:checked~ul {
@@ -1180,6 +1198,7 @@ Screen sizing
     .burger-positioned .final a {
       border-bottom: 1px solid rgba(128, 128, 128, 0.685);
       padding-bottom: 10px;
+      margin-bottom: 50px;
     }
 
     .include,
@@ -1198,9 +1217,11 @@ Screen sizing
     .dropdown-menu>input {
       display: none;
     }
+
     .dropdown-menu li input {
-      width: 300px;
+      width: 450px;
     }
+
     .dropdown-menu>a {
       display: block;
       margin: 15px 0;
@@ -1257,40 +1278,85 @@ Screen sizing
 
     .burger-positioned {
       position: absolute;
-      right: -400px;
-      width: 400px;
+      right: -550px;
+      width: 550px;
       max-width: 0;
       top: 0;
       background-color: #fff;
     }
+
     .dropdown-header input:checked~ul .burger-positioned {
-      max-width: 400px;
+      max-width: 600px;
     }
+
     .dropdown-menu:hover ul {
       background-color: #e3e3e3;
     }
+
     .dropdown-menu ul {
-      width: 400px;
+      width: 550px;
       background-color: #e3e3e3;
     }
+
     .dropdown-menu ul li {
       margin-left: -40px;
     }
+
     .dropdown-menu li:nth-child(1n+1) {
       padding: 0 40px;
     }
 
-  
+
     .burger-positioned li:nth-child(7) {
       display: none;
       margin: 0;
       height: 0;
     }
+
     .domain-price {
       margin-top: -80px;
     }
+
     .domain-price p {
       margin-bottom: 20px;
+    }
+
+    /* Domain option  */
+
+    .domain-option-flex {
+      width: 40%;
+      margin-left: 7%;
+    }
+
+    .domain-option-flex button {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      box-sizing: border-box;
+      width: 330px;
+      padding: 20px 30px;
+    }
+
+    /* Domain preference */
+
+    .group {
+      max-width: 95%;
+    }
+
+    .preference-flex {
+      width: 30%;
+    }
+
+    .preference-flex {
+      padding: 0 1%;
+    }
+
+    .preference-flex h2 {
+      font: normal 700 18px/22px Lato, Helvetica, sans-serif;
+    }
+
+    .preference-flex img {
+      height: 10px;
     }
 
     /* 
@@ -1303,23 +1369,10 @@ Screen sizing
       display: none;
     }
 
-    /* .footer-navigator .fa-search {
-   position: relative;
-   left: -30px;
-   top: 8px;
-   font-size: 20px;
-  } */
     .footer-navigator {
       margin-left: 6%;
       margin-right: 10%;
     }
-
-    /* .footer-navigator input {
-   width: 50%;
-   font-size: 15px;
-   padding-right: 30px;
-  } */
-
 
     .footer-section {
       background: rgb(51, 51, 51);
@@ -1389,9 +1442,6 @@ Screen sizing
       color: rgb(179, 48, 48);
       font-weight: 900;
       font-size: 60px;
-      /* padding-right: 20px; */
-      /* position: relative; */
-      /* bottom: 10px; */
     }
 
     .footer-block-flex input:checked+label .fa-angle-down {
@@ -1399,46 +1449,234 @@ Screen sizing
       color: rgb(194, 19, 19);
     }
 
+    body {
+      transition: all .5s ease;
+    }
+
+    body:has(.dropdown-header>input:checked) {
+      transform: translateX(-550px);
+      overflow-y: hidden;
+    }
+
   }
+
   @media all and (max-width: 800px) {
 
     .hero-section form {
       margin-bottom: 50px;
-      padding-bottom: 10px;   
+      padding-bottom: 10px;
+      height: 70px;
     }
+
     .hero-section form button {
       display: block;
       margin-top: 15px;
       margin-left: 4px;
       width: 95%;
     }
+
     .hero-section form input {
       width: 95%;
     }
+
     .hero-section {
       padding-left: 7%;
     }
- 
+
     .domain-price-tag {
       display: inline-block;
+      padding-left: 7%;
     }
- 
+
     .domain-price {
-      margin-top: -80px;
-      padding-left: 5%;
+      margin-top: -100px;
+
     }
+
+    .price-tag {
+      width: 100%;
+    }
+
     .domain-price p {
       font: normal 700 16px/24px Lato, Helvetica, sans-serif;
       margin-left: -50px;
     }
+
+    .price-tag {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 30px;
+      margin-bottom: 30px;
+    }
+
+    .price-tag p {
+      text-wrap: nowrap;
+      font: normal 400 14px/18px Lato, Helvetica, sans-serif;
+      padding-left: 10%;
+      text-wrap: wrap;
+    }
+
+    .price-tag br {
+      display: none;
+    }
+
+    .price-tag h2 {
+      font: normal 300 18px/22px Lato, Helvetica, sans-serif;
+
+    }
+
+    .price-tag button {
+      width: 90%;
+      margin: 0;
+    }
+
     .hero-section h3 {
       font: normal 900 12px/15px Lato, Helvetica, sans-serif;
     }
-  
+
     .hero-section p {
       font: normal 900 30px/36px Lato, Helvetica, sans-serif;
       padding: 10px 0;
     }
-    
-   
+
+    body {
+      transition: all .5s ease;
+    }
+
+    body:has(.dropdown-header>input:checked) {
+      transform: translateX(-550px);
+      overflow-y: hidden;
+    }
+
+    /* 
+    ==============================================
+    Domain option
+    ==============================================
+     */
+
+    .domain-option-flex {
+      padding-right: 40px;
+    }
+
+    .domain-option-flex h1 {
+      font: normal 600 30px/36px Lato, Helvetica, sans-serif;
+      text-align: center;
+      text-wrap: wrap;
+    }
+
+    .domain-option-flex p {
+      text-align: center;
+    }
+
+    .domain-option-flex button {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      box-sizing: border-box;
+      width: 250px;
+      padding: 15px 50px;
+    }
+
+    /* Domain preferences */
+
+
+
+    .domain-pre-head h1 {
+      font: normal 600 30px/36px Lato, Helvetica, sans-serif;
+    }
+
+    .domain-pre-head p {
+      font: normal 300 22px/27px Lato, Helvetica, sans-serif;
+    }
+
+    .preference-flex h2 {
+      font: normal 700 14px/18px Lato, Helvetica, sans-serif;
+    }
+
+    .preference-flex p {
+      font: normal 300 16px/18px Lato, Helvetica, sans-serif;
+    }
+
+    /* Domain description */
+
+    .description-layout {
+      width: 80%;
+      padding: auto 70px;
+    }
+
+    .description-layout button {
+      position: absolute;
+      left: 20px;
+      text-align: left;
+      font: normal 600 18px/18px Lato, Helvetica, sans-serif;
+    }
+
+    .description-collapsible p {
+      padding-top: 20px;
+      font: normal 400 14px/18px Lato, Helvetica, sans-serif;
+    }
+
+    /* Domain details */
+
+    .domain-details h1 {
+      font: normal 300 18px/22px Lato, Helvetica, sans-serif;
+    }
+
+    .domain-details p {
+      font: normal 400 14px/18px Lato, Helvetica, sans-serif;
+    }
+
+    .footer-navigator p {
+      font: normal 300 22px/27px Lato, Helvetica, sans-serif;
+    }
+    .footer-navigator .fa-search {
+      position: relative;
+      left: -30px;
+      top: 8px;
+      font-size: 20px;
+    }
+
+    .footer-navigator input {
+      width: 70%;
+      height: 45px;
+      font-size: 15px;
+      font-weight: 100;
+      padding-right: 30px;
+    }
+
+
+  }
+
+  @media all and (max-width: 580px) {
+
+    .domain-preference {
+      display: block;
+    }
+
+    .preference-flex {
+      width: 100%;
+    }
+
+    .preference-flex img {
+      height: 60px;
+    }
+  }
+
+  @media all and (max-width: 350px) {
+
+    form {
+      width: 100%;
+      height: 60px;
+    }
+  
+    form input {
+      height: 100%;
+      width: 100%;
+      border: none;
+      margin-left: -27px;
+      padding: 0 50px;
+      border-radius: 5px;
+    }
+
   }
