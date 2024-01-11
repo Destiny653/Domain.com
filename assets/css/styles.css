@@ -418,10 +418,6 @@ Hover
     transform: translateX(10px);
   }
 
-  .hero-section a:hover {
-    /* text-decoration: underline; */
-  }
-
   .price-tag button:hover {
     color: #fff;
     background-color: #000;
