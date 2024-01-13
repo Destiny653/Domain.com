@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
 }
-ol, ul {
+ol, ul, li {
   list-style: none;
 }
 blockquote, q {
@@ -63,7 +63,7 @@ Grid
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /* outline: 1px solid #04d6cc; */
+    /* outline: 1px solid #757e7d; */
   }
 
   .group {
@@ -74,6 +74,7 @@ Grid
 
   .dropdown-menu>input {
     display: none;
+    font: normal 300 26px/32px Lato, Helvetica, sans-serif;
   }
 
   .burger-positioned {
@@ -102,18 +103,17 @@ Grid
     background-size: cover;
   }
 
-  form {
-    width: 90%;
+  .hero-section input {
     height: 60px;
-  }
-
-  form input {
-    height: 100%;
     width: 80%;
     border: none;
     margin-left: -27px;
     padding: 0 50px;
     border-radius: 5px;
+    color: #666666c9;
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 25px;
   }
 
   .dropdown-header ul>li {
@@ -273,13 +273,13 @@ Icon
 ================================================= 
  */
 
-  form .fa-search {
+ .hero-section .fa-search {
     position: relative;
     left: 15px;
     font-size: 30px;
     padding: 0;
     margin: 0;
-    color: #66666659;
+    color: #6666662d;
   }
 
   .fa-arrow-right {
@@ -293,6 +293,11 @@ Hover
 ================================================= 
  */
 
+
+ .dropdown-header .login:hover a {
+  color: firebrick;
+  text-decoration: underline;
+ }
   .dropdown-menu:hover ul {
     display: block;
     position: absolute;
@@ -342,8 +347,7 @@ Hover
     text-decoration: underline;
     cursor: pointer;
   }
-
-  form button:hover {
+  .hero-section button:hover {
     background-color: rgb(182, 56, 55);
   }
 
@@ -355,7 +359,7 @@ Image
 
   .header-intro img {
     width: 110px;
-    height: 53px;
+    height: 45px;
   }
 
   .dropdown-tag {
@@ -393,9 +397,8 @@ Typography
 
   .header-intro {
     background-color: #000;
-    height: 53px;
+    height: 45px;
     padding-left: 7%;
-    margin-bottom: 30px;
   }
 
   .header-intro a {
@@ -407,7 +410,7 @@ Typography
 
   .header-intro div {
     border-left: 2px solid #666666;
-    height: 53px;
+    height: 45px;
   }
 
   .domain-resource {
@@ -517,6 +520,10 @@ Typography
 
   .price-tag {
     padding-left: 17px;
+  }
+  .price-tag span {
+    color: rgb(189, 12, 12);
+    padding-right: 4px;
   }
 
   .price-tag h2 {
@@ -677,7 +684,10 @@ Typography
   .domain-resource li:first-child {
     margin-right: 3%;
   }
-
+  .dropdown-header {
+    height: 80px;
+     padding-top: 30px;
+  }
   .dropdown-header p {
     text-decoration: none;
     color: #333;
@@ -739,13 +749,14 @@ Footer
 
   .footer-navigator {
     display: flex;
-    /* width: 90%; */
   }
 
   .footer-navigator p {
-    flex-wrap: wrap;
+    width: 40%;
+    padding: auto 50px;
+    text-wrap: wrap;
     color: #fff;
-    margin-right: 3%;
+    margin-right: 20px;
     font: normal 300 26px/32px Lato, Helvetica, sans-serif;
   }
 
@@ -842,8 +853,8 @@ Button
     border: none;
   }
 
-  form button {
-    height: 100%;
+  .hero-section button {
+    height: 60px;
     width: 14%;
     margin-left: 1.2%;
     border: none;
@@ -919,15 +930,16 @@ Button
 
   .footer-navigator input {
     width: 35%;
+    padding: 0 20px;
     height: 40px;
     border: none;
     border-radius: 5px;
+    font: normal 300 25px/40px Lato, sans-serif;
   }
 
   .footer-navigator input::placeholder {
     color: #0000006c;
     font: normal 300 24px/40px Lato, sans-serif;
-    padding-left: 10px;
   }
 
 
@@ -936,7 +948,7 @@ Button
 Screen sizing
 ==================================================
  */
-  @media all and (min-width:1000px) {
+  @media all and (min-width:1101px) {
     .include {
       display: none;
     }
@@ -964,7 +976,7 @@ Screen sizing
 
   }
 
-  @media all and (max-width: 990px) {
+  @media all and (max-width: 1100px) {
 
 
     /* 
@@ -1026,8 +1038,8 @@ Screen sizing
       
     .cart-external {
       position: absolute;
-      right: 110px;
-      top: 85px;
+      right:95px;
+      top: 58px;
     }
 
     .cart-external input {
@@ -1227,8 +1239,8 @@ Screen sizing
     /* Domain option  */
 
     .domain-option-flex {
-      width: 40%;
-      margin-left: 7%;
+      width: 48%;
+      padding-right: 25px;
     }
 
     .domain-option-flex button {
@@ -1243,9 +1255,13 @@ Screen sizing
     /* Domain preference */
 
     .group {
-      max-width: 95%;
+      max-width: 100%;
     }
 
+    .domain-preference {
+      margin: auto 0;
+      padding: 0;
+    }
     .preference-flex {
       width: 30%;
     }
@@ -1260,6 +1276,7 @@ Screen sizing
 
     .preference-flex img {
       height: 10px;
+      padding-right: 15px;
     }
 
     /* Domain description */
@@ -1358,6 +1375,10 @@ Screen sizing
       top: -80px;
     }
 
+    .footer-navigator p {
+      width: 55%;
+    }
+
     .footer-block-flex .fa-angle-down {
       transform: rotate(-90deg);
       color: rgb(179, 48, 48);
@@ -1389,6 +1410,9 @@ Screen sizing
 
   @media all and (max-width: 800px) {
 
+    .cart-external {
+      right: 110px;
+    }
     .burger-positioned {
       position: absolute;
       right: -83%;
@@ -1423,6 +1447,7 @@ Screen sizing
 
     .hero-section form input {
       width: 95%;
+      margin-left: 2px;
     }
 
     .hero-section {
@@ -1488,6 +1513,9 @@ Screen sizing
       padding: 10px 0;
     }
 
+    .hero-section .fa-search {
+         display: none;
+    }
     body {
       transition: all .5s ease;
     }
@@ -1578,13 +1606,9 @@ Screen sizing
       top: 8px;
       font-size: 20px;
     }
-
     .footer-navigator input {
       width: 70%;
-      height: 45px;
-      font-size: 15px;
-      font-weight: 100;
-      padding-right: 30px;
+      font: normal 300 25px/20px Lato, sans-serif;
     }
 
 
@@ -1600,15 +1624,9 @@ Screen sizing
       right: 10px;
     }
     .cart-external {
- 
-      right: 19px;
-      top: 75px;
+      right: 30px;
     }
 
-  
-    .hero-section .fa-search {
-      display: none;
-    }
     .hero-section form {
       width: 107%;
     }
@@ -1700,7 +1718,7 @@ Screen sizing
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       box-sizing: border-box;
-      width: 420px;
+      width: 90%;
       padding: 15px 30px;
     }
 
@@ -1720,6 +1738,25 @@ Screen sizing
       width: 100%;
       padding-left: 20px;
     }
+    .footer-navigator {
+      display: block;
+      position: relative;
+    }
+    .footer-navigator p {
+      width: 90%;
+      padding-bottom: 10px;
+    }
+    .footer-navigator input {
+      width: 100%;
+      font: normal 300 25px/20px Lato, sans-serif;
+    }
+    .footer-navigator .fa-search {
+      position: absolute;
+      left: 310px;
+      top: 50px;
+    }
+
+  
 
   }
 
