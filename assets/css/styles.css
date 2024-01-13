@@ -1026,8 +1026,8 @@ Screen sizing
       
     .cart-external {
       position: absolute;
-      right: 100px;
-      top: 75px;
+      right: 110px;
+      top: 85px;
     }
 
     .cart-external input {
