@@ -3,137 +3,50 @@
    License: none (public domain)
 */
 
-  html,
-  body,
-  div,
-  span,
-  applet,
-  object,
-  iframe,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote,
-  pre,
-  a,
-  abbr,
-  acronym,
-  address,
-  big,
-  cite,
-  code,
-  del,
-  dfn,
-  em,
-  img,
-  ins,
-  kbd,
-  q,
-  s,
-  samp,
-  small,
-  strike,
-  strong,
-  sub,
-  sup,
-  tt,
-  var,
-  b,
-  u,
-  i,
-  center,
-  dl,
-  dt,
-  dd,
-  ol,
-  ul,
-  li,
-  fieldset,
-  form,
-  label,
-  legend,
-  table,
-  caption,
-  tbody,
-  tfoot,
-  thead,
-  tr,
-  th,
-  td,
-  article,
-  aside,
-  canvas,
-  details,
-  embed,
-  figure,
-  figcaption,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  output,
-  ruby,
-  section,
-  summary,
-  time,
-  mark,
-  audio,
-  video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-  }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
-  /* HTML5 display-role reset for older browsers */
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  menu,
-  nav,
-  section {
-    display: block;
-  }
-
-  body {
-    line-height: 1;
-  }
-
-  ol,
-  ul,
-  li {
-    list-style: none;
-  }
-
-  blockquote,
-  q {
-    quotes: none;
-  }
-
-  blockquote:before,
-  blockquote:after,
-  q:before,
-  q:after {
-    content: '';
-    content: none;
-  }
-
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
 
   /*
 ==================================================
@@ -150,6 +63,7 @@ Grid
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    /* outline: 1px solid #04d6cc; */
   }
 
   .group {
@@ -157,9 +71,6 @@ Grid
     margin: 0 auto;
   }
 
-  .dropdown-header {
-    margin-bottom: 30px;
-  }
 
   .dropdown-menu>input {
     display: none;
@@ -250,10 +161,10 @@ Grid
   .dropdown-menu .cart-list {
     -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, .1);
     box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, .1);
-    width: 320px;
+    width: 330px;
     padding: 15px;
     position: relative;
-    right: 15%;
+    right: 10%;
   }
 
   .domain-price {
@@ -309,11 +220,13 @@ Dropdown
   .dropdown-menu ul {
     display: none;
     width: 250px;
+    position: relative;
+    top: 35px;
   }
 
-  .dropdown-menu li {
-    margin: 20px 0;
-    padding: 10px 10px;
+  .dropdown-menu ul li {
+    margin: 0;
+    padding: 0;
     text-transform: capitalize;
   }
 
@@ -323,7 +236,7 @@ Dropdown
     color: #e24747;
     position: relative;
     right: 30px;
-    transition: all .45s ease;
+    transition: all 1s ease;
   }
 
   input:checked+label .fa-angle-down {
@@ -332,11 +245,10 @@ Dropdown
   }
 
   .description-layout {
+    width: 90%;
+    padding: 0 30px;
+    border-radius: 5px;
     position: relative;
-  }
-
-  .dropdown-menu ul {
-    width: 250px;
   }
 
   .description-layout input {
@@ -390,7 +302,10 @@ Hover
   .dropdown-menu ul a:hover {
     text-decoration: underline;
   }
-
+  .dropdown-menu ul li:hover {
+    background-color: lightgray;
+  }
+  
   .dropdown-menu p:hover .fa-angle-down {
     color: rgb(187, 50, 50);
   }
@@ -439,8 +354,8 @@ Image
 */
 
   .header-intro img {
-    width: 113px;
-    height: 43px;
+    width: 110px;
+    height: 53px;
   }
 
   .dropdown-tag {
@@ -478,22 +393,21 @@ Typography
 
   .header-intro {
     background-color: #000;
-    height: 43px;
+    height: 53px;
     padding-left: 7%;
     margin-bottom: 30px;
   }
 
   .header-intro a {
-    line-height: 53px;
     color: #fff;
     vertical-align: top;
     padding: 0 15px;
-    font: normal 300 15px/37px Lato, Helvetica, sans-serif;
+    font: normal 300 15px/57px Lato, Helvetica, sans-serif;
   }
 
   .header-intro div {
     border-left: 2px solid #666666;
-    height: 43px;
+    height: 53px;
   }
 
   .domain-resource {
@@ -544,15 +458,19 @@ Typography
     padding: 20px 0;
   }
 
-  .dropdown-menu h4 {
+
+  .cart-list input {
+    border: none;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    width: 100%;
     color: #fff;
     padding: 10px 0;
     margin-bottom: 15px;
     text-align: center;
     font: normal 600 14px/20px Lato, sans-serif;
     color: #333;
+ 
   }
 
   .hero-section h3 {
@@ -744,6 +662,7 @@ Typography
 
   .domain-description p {
     font: normal 400 16px/22px Lato, Helvetica, sans-serif;
+    padding-top: 20px;
     color: #333;
   }
 
@@ -994,27 +913,9 @@ Button
     color: rgb(182, 56, 55);
   }
 
-  /*
-===================================================
-Hover
-=================================================== 
-*/
-
   .footer-block-flex a:hover {
     text-decoration: underline;
   }
-
-  /*
-===================================================
-Dropdown
-=================================================== 
-*/
-
-  /*
-==================================================
-Text input
-==================================================
-*/
 
   .footer-navigator input {
     width: 35%;
@@ -1073,8 +974,9 @@ Screen sizing
  */
 
     .group {
-      max-width: 80%;
+      max-width: 100%;
       margin: 0 auto;
+      padding: 0 6%;
     }
 
     /*
@@ -1113,7 +1015,7 @@ Screen sizing
 
     .burg-bot-search>input {
       border: none;
-      width: 500px;
+      width: 90%;
       height: 40px;
       padding-left: 30px;
       margin-top: -50px;
@@ -1121,10 +1023,10 @@ Screen sizing
       border-radius: 5px;
       border-bottom: 4px solid #000;
     }
-
+      
     .cart-external {
       position: absolute;
-      right: 20px;
+      right: 100px;
       top: 75px;
     }
 
@@ -1168,11 +1070,11 @@ Screen sizing
     }
 
     .burger-positioned li ul {
-      margin-top: -20px;
+      margin-top: -53px;
     }
 
     .dropdown-header input:checked~ul .burger-positioned {
-      max-height: 2000px;
+      max-height: 1000px;
       background-color: #f3f3f3;
     }
 
@@ -1215,7 +1117,7 @@ Screen sizing
     }
 
     .dropdown-menu li input {
-      width: 450px;
+      width: 90%;
     }
 
     .dropdown-menu>a {
@@ -1231,7 +1133,7 @@ Screen sizing
       justify-content: flex-start;
       flex-shrink: 0;
       position: absolute;
-      right: 10px;
+      right: 100px;
     }
 
     .top-burger {
@@ -1274,15 +1176,15 @@ Screen sizing
 
     .burger-positioned {
       position: absolute;
-      right: -550px;
-      width: 550px;
+      right: -50%;
+      width: 50%;
       max-width: 0;
       top: 0;
       background-color: #fff;
     }
 
     .dropdown-header input:checked~ul .burger-positioned {
-      max-width: 600px;
+      max-width: 50%;
     }
 
     .dropdown-menu:hover ul {
@@ -1290,12 +1192,17 @@ Screen sizing
     }
 
     .dropdown-menu ul {
-      width: 550px;
+      width: 100%;
       background-color: #e3e3e3;
+      padding-bottom: 5px;
+      margin-bottom: 40px;
     }
 
     .dropdown-menu ul li {
       margin-left: -40px;
+    }
+    .dropdown-menu ul li:hover {
+      background: none;
     }
 
     .dropdown-menu li:nth-child(1n+1) {
@@ -1355,8 +1262,26 @@ Screen sizing
       height: 10px;
     }
 
-    /* 
-   ============================================
+    /* Domain description */
+
+    .description-layout {
+      width: 95%;
+      padding: 20px 40px;
+    }
+    .description-layout button {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      padding-left: 20px;
+      text-align: left;
+      line-height: 20px;
+    }
+    .description-collapsible p {
+      padding-top: 30px;
+    }
+
+   /* 
+ ============================================
  footer
  ============================================
  */
@@ -1450,15 +1375,40 @@ Screen sizing
     }
 
     body:has(.dropdown-header>input:checked) {
-      transform: translateX(-550px);
+      transform: translateX(-50%);
       overflow-y: hidden;
     }
 
   }
 
+  /* 
+  ==================================================
+  Screen sizing
+  ==================================================
+  */
+
   @media all and (max-width: 800px) {
 
+    .burger-positioned {
+      position: absolute;
+      right: -83%;
+      width: 83%;
+      max-width: 0;
+      top: 0;
+    }
+
+    .dropdown-header input:checked~ul .burger-positioned {
+      max-width: 83%;
+    }
+    
+    body:has(.dropdown-header>input:checked) {
+      transform: translateX(-83%);
+      overflow-y: hidden;
+    }
+
     .hero-section form {
+      box-sizing: border-box;
+      width: 95%;
       margin-bottom: 50px;
       padding-bottom: 10px;
       height: 70px;
@@ -1476,21 +1426,23 @@ Screen sizing
     }
 
     .hero-section {
-      padding-left: 7%;
+      padding-left: 5%;
     }
 
-    .domain-price-tag {
-      display: inline-block;
-      padding-left: 7%;
-    }
+    
+    
+    /* Domain price */
 
     .domain-price {
+      width: 100%;
       margin-top: -100px;
-
     }
 
+
     .price-tag {
-      width: 100%;
+      width: 85%;
+      margin: 0 auto;
+      padding-bottom: 30px;
     }
 
     .domain-price p {
@@ -1538,11 +1490,6 @@ Screen sizing
 
     body {
       transition: all .5s ease;
-    }
-
-    body:has(.dropdown-header>input:checked) {
-      transform: translateX(-550px);
-      overflow-y: hidden;
     }
 
     /* 
@@ -1597,8 +1544,7 @@ Screen sizing
     /* Domain description */
 
     .description-layout {
-      width: 80%;
-      padding: auto 70px;
+      width: 85%;
     }
 
     .description-layout button {
@@ -1646,6 +1592,59 @@ Screen sizing
 
   @media all and (max-width: 580px) {
 
+    .group {
+      width: 100%;
+      margin: 0;
+    }
+    .burger-container {
+      right: 10px;
+    }
+    .cart-external {
+ 
+      right: 19px;
+      top: 75px;
+    }
+
+  
+    .hero-section .fa-search {
+      display: none;
+    }
+    .hero-section form {
+      width: 107%;
+    }
+    .hero-section {
+      background-repeat: no-repeat;
+      background-size: 900px 500px;
+    }
+
+    .hero-section form input {
+    margin-left: 1%;
+    }
+
+   .hero-section {
+    margin: 0 auto;
+    padding-left: 2%;
+  }
+    .hero-section>.group {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .domain-price {
+      width: 100%;
+      margin-top: -100px;
+      margin-left: 15px;
+      padding-right: 0;
+      padding-left: 0;
+
+    }
+
+    .price-tag {
+      width: 100%;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+
     .domain-preference {
       display: block;
     }
@@ -1656,23 +1655,72 @@ Screen sizing
 
     .preference-flex img {
       height: 60px;
+      padding-right: 20px;
     }
+    .domain-pre-head {
+      padding: 0;
+    }
+    .domain-pre-head .group {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    /* Domain description */
+
+    .description-layout {
+      width: 100%;
+    }
+    .domain-description {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    /* Domain option */
+
+    .domain-option-flex {
+      width: 100%;
+      margin: auto 0;
+      padding: 0;
+    }
+    .domain-option-flex img {
+      width: 100%;
+      height: auto;
+    }
+
+    .order1 {
+      order: 1;
+    }
+    .order2 {
+      order: 2;
+    }
+    .domain-option-flex button {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      box-sizing: border-box;
+      width: 420px;
+      padding: 15px 30px;
+    }
+
+    /*  Domain details */
+
+    .domain-details {
+      box-sizing: border-box;
+      display: block;
+      max-width: 100%;
+      padding: 0 20px;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+    }
+    .details-flex img {
+      height: auto;
+      width: 100%;
+      padding-left: 20px;
+    }
+
   }
 
-  @media all and (max-width: 350px) {
-
-    form {
-      width: 100%;
-      height: 60px;
-    }
-  
-    form input {
-      height: 100%;
-      width: 100%;
-      border: none;
-      margin-left: -27px;
-      padding: 0 50px;
-      border-radius: 5px;
-    }
-
-  }
+ 
