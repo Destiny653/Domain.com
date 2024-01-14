@@ -136,9 +136,6 @@ Grid
     padding: 20px 10px;
     text-transform: capitalize;
   }
-  .drop-head-input {
-
-  }
 
   .dropdown-menu ul>li:nth-child(8) {
     margin-left: 0;
@@ -484,7 +481,6 @@ Typography
     text-align: center;
     font: normal 600 14px/20px Lato, sans-serif;
     color: #333;
- 
   }
 
   .hero-section h3 {
@@ -981,13 +977,9 @@ Screen sizing
       display: none;
     }
 
-    .cart-external,
-    .cart-external ul span {
-      max-height: 0;
-      overflow: hidden;
-    }
-
-    /* .cart-list input:checked+label < .cart-external */
+   .min-cart {
+    display: none;
+   }
 
   }
 
@@ -1011,6 +1003,55 @@ Screen sizing
   header 
   ===============================================  
   */
+
+  .min-cart {
+    position: absolute;
+    right: -160px;
+    top: 60px;
+  }
+  .min-cart>input {
+    display: none;
+  }
+  
+  .min-cart ul {
+    width: 330px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    right: 250px;
+    padding: 0 10px;
+    padding-bottom: 10px;
+  }
+  .min-cart input:checked~label+ul {
+     max-height: 300PX;
+  }
+    .min-cart h1 {
+    font: normal 700 40px/34px Lato, sans-serif;
+    color: #333;
+    padding: 20px 0;
+  }
+  .min-cart span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  .btn-cart {
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  .min-cart input {
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font: normal 600 14px/20px Lato, sans-serif;
+    color: #333;
+  }
 
     .dropdown-menu label p {
       padding-left: 20px;
@@ -1050,21 +1091,7 @@ Screen sizing
       border-radius: 5px;
       border-bottom: 4px solid #000;
     }
-      
-    .cart-external {
-      position: absolute;
-      right:95px;
-      top: 58px;
-    }
-
-    .cart-external input {
-      display: none;
-    }
-
-    .cart-external input:checked+label~ul {
-      display: block;
-    }
-
+ 
     .dropdown-header label .fa-search {
       position: absolute;
       font-size: 20px;
@@ -1219,6 +1246,7 @@ Screen sizing
     }
 
     .dropdown-menu ul {
+      z-index: 2;
       width: 100%;
       background-color: #e3e3e3;
       padding-bottom: 5px;
@@ -1233,7 +1261,7 @@ Screen sizing
     }
 
     .dropdown-menu li:nth-child(1n+1) {
-      padding: 0 40px;
+      padding: 10px 40px;
     }
 
 
@@ -1372,22 +1400,17 @@ Screen sizing
     }
 
     .footer-icons {
-      padding-top: 40px;
+      margin-left: 30%;
+      margin-top: -40px;
+    }
+
+    .footer-order1 {
+      padding: 30px 0;
     }
 
     .footer-animation {
       margin-left: -19%;
       margin-top: -20px;
-    }
-
-    .footer-icons small {
-      margin-left: 30%;
-    }
-
-    .small-footer {
-      position: relative;
-      margin-left: 30%;
-      top: -80px;
     }
 
     .footer-navigator p {
@@ -1425,9 +1448,7 @@ Screen sizing
 
   @media all and (max-width: 800px) {
 
-    .cart-external {
-      right: 110px;
-    }
+
     .burger-positioned {
       position: absolute;
       right: -83%;
@@ -1626,10 +1647,27 @@ Screen sizing
       font: normal 300 25px/20px Lato, sans-serif;
     }
 
+    
+    .footer-order1 {
+      order: 1;
+    }
+
+    .footer-order2 {
+      order: 2;
+      padding-bottom: 50px;
+    }
+
+
 
   }
 
   @media all and (max-width: 580px) {
+
+    .min-cart {
+      position: absolute;
+      right: -250px;
+      top: 60px;
+    }
 
     .group {
       width: 100%;
@@ -1637,9 +1675,6 @@ Screen sizing
     }
     .burger-container {
       right: 10px;
-    }
-    .cart-external {
-      right: 30px;
     }
 
     .hero-section form {
