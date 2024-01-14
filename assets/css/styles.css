@@ -102,6 +102,11 @@ Grid
     background-image: url(../images/domain-name-search-hero-l.png);
     background-size: cover;
   }
+  
+  form {
+    width: 90%;
+    height: 60px;
+  }
 
   .hero-section input {
     height: 60px;
@@ -127,9 +132,12 @@ Grid
   }
 
   .dropdown-menu li:nth-child(1n+1) {
-    margin: 20px 0;
-    padding: 10px 10px;
+    margin-left: 0;
+    padding: 20px 10px;
     text-transform: capitalize;
+  }
+  .drop-head-input {
+
   }
 
   .dropdown-menu ul>li:nth-child(8) {
@@ -295,7 +303,7 @@ Hover
 
 
  .dropdown-header .login:hover a {
-  color: firebrick;
+  color: rgb(223, 28, 28);
   text-decoration: underline;
  }
   .dropdown-menu:hover ul {
@@ -309,6 +317,9 @@ Hover
   }
   .dropdown-menu ul li:hover {
     background-color: lightgray;
+  }
+  .dropdown-menu ul .drop-head-input:hover {
+    background-color: initial;
   }
   
   .dropdown-menu p:hover .fa-angle-down {
@@ -853,7 +864,11 @@ Button
     border: none;
   }
 
+  .help-list {
+    z-index: 1;
+  }
   .hero-section button {
+    transform: translateY(-4px);
     height: 60px;
     width: 14%;
     margin-left: 1.2%;
