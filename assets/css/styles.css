@@ -63,7 +63,7 @@ Grid
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    outline: 1px solid #757e7d;
+    /* outline: 1px solid #757e7d; */
   }
 
   .group {
@@ -1830,6 +1830,9 @@ Screen sizing
       width: 100%;
       padding-left: 20px;
     }
+    .footer-p {
+      margin: 30px 20px;
+    }
     .footer-navigator {
       display: block;
       position: relative;
@@ -1859,6 +1862,7 @@ Screen sizing
 
     .footer-icons small {
       margin-left: -7%;
+      width: 100%;
     }
   
     .footer-icons ul {
