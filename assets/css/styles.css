@@ -536,6 +536,10 @@ Typography
   .domain-resource p {
     display: inline-block;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
   }
 
   .domain-resource-text {
@@ -1876,6 +1880,7 @@ Screen sizing
       margin-top: -100px;
       padding-right: 0;
       padding-left: 0;
+      margin: auto 20px;
 
     }
 
