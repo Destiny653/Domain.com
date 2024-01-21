@@ -152,7 +152,7 @@ Screen size (1101px)
 
     .burg-bot-search>input {
         border: none;
-        @include EleLength(90%, 40px);
+        @include EleLength(85%, 40px);
         padding-left: 30px;
         margin-top: -50px;
         margin-left: 25px;
@@ -867,6 +867,9 @@ Dropdown header
 
     .burger-container {
         right: 10px;
+    }
+    .fa-top-search {
+        position: absolute;
     }
 
     /* 
