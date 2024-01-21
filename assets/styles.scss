@@ -1,7 +1,145 @@
+  /* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 
 //Settings import
 
 @import "./setting/mixins";
+@import "./setting/variables";
 @import "./setting/variables";
 
 
@@ -20,7 +158,7 @@ body {
   *::before,
   *::after {
     @include EleBoxsize();
-    /* outline: 1px solid #757e7d; */
+    // outline: 1px solid #757e7d;
   }
 
   .group {
@@ -69,16 +207,16 @@ body {
       margin-left: -27px;
       border-radius: 6px;
       color: #666666c9;
-      font: normal 300 25px/20px Lato, Helvetica, sans-serif;
+      font-family: Lato, Helvetica, sans-serif;
+      font-weight: 300;
+      font-size: 25px;
     }
   }
 
   .dropdown-header {
     ul>li {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      margin-left: 5.3%;
+      box-sizing: padding-box;
+      margin-right: 5.3%;
     }
   }
 
@@ -214,13 +352,19 @@ Dropdown
     font-size: 22px;
     color: #e24747;
     position: absolute;
-    left: 10px;
+    left: 15px;
     transition: all 1s ease;
   }
 
   input {
     display: none;
   }
+}
+
+.description-collapsible {
+  transition: all 1s ease;
+  overflow: hidden;
+  max-height: 300px;
 }
 
 input:checked+label {
@@ -484,6 +628,9 @@ Typography
     text-decoration: none;
     color: #fff;
   }
+  ::placeholder {
+    color: grey;
+  }
 
   ::placeholder {
     font: normal 300 26px/40  $fontFam;
@@ -522,7 +669,8 @@ Typography
 
 .preference-flex {
   background-color: #fafafa;
-   @include Eleflex();
+  display: flex;
+  justify-content: center;
 }
 
 .domain-option-flex {
@@ -584,7 +732,15 @@ Typography
 .domain-description {
   h1 {
     text-align: center;
-    font: normal 300 26px/10px  $fontFam;
+    font: normal 300 26px/25px  $fontFam;
+  }
+
+  button {
+    font: normal 600 22px/50px  $fontFam;
+    columns: #000;
+    background-color: inherit;
+    border: none;
+    /* display: flex; */
   }
 
   p {

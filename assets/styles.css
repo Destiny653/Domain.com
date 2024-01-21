@@ -1,3 +1,139 @@
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*
 ==========================================
 Grid
@@ -11,7 +147,6 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-  /* outline: 1px solid #757e7d; */
 }
 
 .group {
@@ -61,12 +196,14 @@ form {
   margin-left: -27px;
   border-radius: 6px;
   color: rgba(102, 102, 102, 0.7882352941);
-  font: normal 300 25px/20px Lato, Helvetica, sans-serif;
+  font-family: Lato, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
 }
 
 .dropdown-header ul > li {
-  box-sizing: border-box;
-  margin-left: 5.3%;
+  box-sizing: padding-box;
+  margin-right: 5.3%;
 }
 
 .fa-angle-down {
@@ -187,11 +324,17 @@ Dropdown
   font-size: 22px;
   color: #e24747;
   position: absolute;
-  left: 10px;
+  left: 15px;
   transition: all 1s ease;
 }
 .description-layout input {
   display: none;
+}
+
+.description-collapsible {
+  transition: all 1s ease;
+  overflow: hidden;
+  max-height: 300px;
 }
 
 input:checked + label .fa-angle-down {
@@ -428,6 +571,12 @@ Typography
   color: #fff;
 }
 .hero-section ::-moz-placeholder {
+  color: grey;
+}
+.hero-section ::placeholder {
+  color: grey;
+}
+.hero-section ::-moz-placeholder {
   font: normal 300 26px/40 Lato, Helvetica, sans-serif;
 }
 .hero-section ::placeholder {
@@ -463,7 +612,6 @@ Typography
 .preference-flex {
   background-color: #fafafa;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -517,7 +665,15 @@ Typography
 
 .domain-description h1 {
   text-align: center;
-  font: normal 300 26px/10px Lato, Helvetica, sans-serif;
+  font: normal 300 26px/25px Lato, Helvetica, sans-serif;
+}
+.domain-description button {
+  font: normal 600 22px/50px Lato, Helvetica, sans-serif;
+  -moz-columns: #000;
+       columns: #000;
+  background-color: inherit;
+  border: none;
+  /* display: flex; */
 }
 .domain-description p {
   font: normal 400 16px/22px Lato, Lato, Helvetica, sans-serif;
