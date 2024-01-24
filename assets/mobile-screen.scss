@@ -85,9 +85,11 @@ Screen size (1101px)
         width: 330px;
         position: relative;
         right: 250px;
+        bottom: 30px;
         padding: 0 10px;
         padding-bottom: 10px;
         display: none;
+        z-index: 2;
     }
 
 
@@ -199,6 +201,14 @@ Screen size (1101px)
     .dropdown-menu li input {
         width: 90%;
     }
+    .dropdown-header {
+        .login:hover {
+          a {
+            color: #333;
+            text-decoration: none;
+          }
+        }
+       }
 
     .dropdown-menu>a {
         display: block;
@@ -262,7 +272,6 @@ Dropdown header
         max-height: 0;
         overflow: hidden;
         position: absolute;
-        right: -50%;
         top: 0;
         background-color: #fff;
 
@@ -294,6 +303,17 @@ Dropdown header
     body:has(.dropdown-header>input:checked) {
         transform: translateX(-50%);
         overflow-y: hidden;
+    }
+      .burger-positioned {
+        position: absolute;
+        right: -50%;
+        width: 50%;
+        max-width: 0;
+        top: 0;
+    }
+
+    .dropdown-header input:checked~ul .burger-positioned {
+        max-width: 50%;
     }
 
     .dropdown-menu:hover ul {
@@ -581,14 +601,14 @@ Dropdown header
 
     .burger-positioned {
         position: absolute;
-        right: -83%;
-        width: 83%;
+        right: -70%;
+        width: 70%;
         max-width: 0;
         top: 0;
     }
 
     .dropdown-header input:checked~ul .burger-positioned {
-        max-width: 83%;
+        max-width: 70%;
     }
 
     body {
@@ -596,7 +616,7 @@ Dropdown header
     }
 
     body:has(.dropdown-header>input:checked) {
-        transform: translateX(-83%);
+        transform: translateX(-70%);
         overflow-y: hidden;
     }
 
@@ -918,6 +938,7 @@ Domain price tag
         width: 100%;
         margin-bottom: 30px;
         padding-bottom: 30px;
+        padding-left: 20px;
 
         button {
             margin-left: 10px;
@@ -969,7 +990,7 @@ Domain preferences
 */
 
     .domain-pre-head {
-        width: 97%;
+        width: 90%;
         margin: auto;
         padding: 0;
     }
@@ -979,10 +1000,12 @@ Domain preferences
     }
 
     .preference-flex {
-        width: 90%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
 
         img {
-            height: 60px;
+            height: 50px;
             padding-right: 20px;
         }
     }
