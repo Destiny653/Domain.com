@@ -143,6 +143,10 @@ Screen size (1101px)
 
     }
 
+    .burger-positioned {
+        box-shadow: inset 4px 0 5px (gray);
+    }
+
     .dropdown-menu:hover ul {
         display: none;
     }
@@ -201,14 +205,15 @@ Screen size (1101px)
     .dropdown-menu li input {
         width: 90%;
     }
+
     .dropdown-header {
         .login:hover {
-          a {
-            color: #333;
-            text-decoration: none;
-          }
+            a {
+                color: #333;
+                text-decoration: none;
+            }
         }
-       }
+    }
 
     .dropdown-menu>a {
         display: block;
@@ -282,7 +287,7 @@ Dropdown header
         li:nth-child(7) {
             display: none;
             margin: 0;
-            height: 0;
+            height: 40px;
         }
     }
 
@@ -304,7 +309,8 @@ Dropdown header
         transform: translateX(-50%);
         overflow-y: hidden;
     }
-      .burger-positioned {
+
+    .burger-positioned {
         position: absolute;
         right: -50%;
         width: 50%;
@@ -888,6 +894,7 @@ Dropdown header
     .burger-container {
         right: 10px;
     }
+
     .fa-top-search {
         position: absolute;
     }

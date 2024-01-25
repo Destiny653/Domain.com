@@ -390,10 +390,6 @@ Image
 Typography
 ==================================================
 */
-.burger-positioned {
-  box-shadow: inset 4px 0 5px gray;
-}
-
 .header-intro {
   background-color: #000;
   height: 45px;
@@ -504,6 +500,9 @@ Typography
   color: #fff;
 }
 
+.price-tag {
+  padding-left: 20px;
+}
 .price-tag h1 {
   font: normal 700 48px/55px Lato, Helvetica, sans-serif;
   color: #000;

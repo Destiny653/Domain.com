@@ -108,6 +108,9 @@ Screen size (1101px)
     position: absolute;
     right: 5px;
   }
+  .burger-positioned {
+    box-shadow: inset 4px 0 5px gray;
+  }
   .dropdown-menu:hover ul {
     display: none;
   }
@@ -224,7 +227,7 @@ Screen size (1101px)
   .burger-positioned li:nth-child(7) {
     display: none;
     margin: 0;
-    height: 0;
+    height: 40px;
   }
   .bug {
     max-height: 0;

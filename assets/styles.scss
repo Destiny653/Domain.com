@@ -443,9 +443,6 @@ Typography
 ==================================================
 */
 
-.burger-positioned {
-  box-shadow: inset 4px 0 5px (gray);
-}
 .header-intro {
   background-color: #000;
   height: 45px;
@@ -560,6 +557,7 @@ Typography
 }
 
 .price-tag {
+  padding-left: 20px;
   h1 {
     font: normal 700 48px/55px  $fontFam;
     color: #000;
