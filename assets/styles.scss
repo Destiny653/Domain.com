@@ -140,7 +140,7 @@ body {
 
     li:nth-child(1n+1) {
       margin-left: 0;
-      padding: 20px 10px;
+      padding: 15px 10px;
       text-transform: capitalize;
     }
 
@@ -279,13 +279,15 @@ Dropdown
   max-height: 1000px;
 }
 
-input:checked+label {
-  .fa-angle-down {
-    color: #000;
-    transform: rotate(-90deg);
+.domain-description {
+  input:checked+label {
+    .fa-angle-down {
+      color: #000;
+      transform: rotate(-90deg);
+    }
   }
+  
 }
-
 input:checked~.description-collapsible {
   max-height: 0;
 }
@@ -441,7 +443,9 @@ Typography
 ==================================================
 */
 
-
+.burger-positioned {
+  box-shadow: inset 4px 0 5px (gray);
+}
 .header-intro {
   background-color: #000;
   height: 45px;
@@ -940,13 +944,15 @@ Button
   right: 40px;
   @include EleLength(55px,54.75px);
   color: #fff;
-  background-color: rgb(182, 56, 55);
+  background-color: rgb(192, 36, 36);
   box-shadow: 2.11213px 4.22427px 6.3364px rgba(0, 0, 0, 0.23);
   border-radius: 63.364px 70.364px 0px 63.364px;
   cursor: pointer;
   border: none;
   font-size: small;
+  font-weight: 600;
   display: block;
+  box-shadow: -0.5px -2px 1px (rgb(0, 102, 255));
 }
 
 .fa-commenting {
